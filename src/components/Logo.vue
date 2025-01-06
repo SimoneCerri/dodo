@@ -18,7 +18,9 @@ export default {
 </script>
 
 <template>
-
+    <div class="bg-warning">
+        LOGO
+    </div>
 </template>
 
 <style></style>

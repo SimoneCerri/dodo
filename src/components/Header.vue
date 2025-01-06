@@ -1,10 +1,13 @@
 <script>
+import Logo from './Logo.vue'
+import Menu from './Menu.vue'
 
 export default {
     name: 'Header',
     components:
     {
-
+        Logo,
+        Menu
     },
     props: {
 
@@ -18,8 +21,10 @@ export default {
 </script>
 
 <template>
-    <Logo></Logo>
-    <Menu></Menu>
+    <div class="d-flex justify-content-between px-5">
+        <Logo class="mt-3"></Logo>
+        <Menu></Menu>
+    </div>
 </template>
 
 <style></style>
