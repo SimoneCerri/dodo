@@ -40,13 +40,13 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - [Vue.js](https://vuejs.org/) .
 - [Vite](https://vite.dev/) .
 - [GoogleFont](https://fonts.google.com/) .
-- [Bootstrap]() .
+- [Bootstrap](https://getbootstrap.com/) .
 
 ### 🔗 **<span style="color: black"> TEAM </span>** ###
 
-- <a href="https://example.com" style="color: #F5BF40;">ProjectDirector : Valeria</a>
-- <a href="https://example.com" style="color: #F9EBD2;">Designer : Alessia</a>
-- <a href="https://example.com" style="color: #BBD9D4;">WebDeveloper : Simone</a> .
+- <a href="" style="color: #F5BF40;">ProjectDirector : Valeria</a>
+- <a href="" style="color: #F9EBD2;">Designer : Alessia</a>
+- <a href="" style="color: #BBD9D4;">WebDeveloper : Simone</a> .
 
 
 <!--

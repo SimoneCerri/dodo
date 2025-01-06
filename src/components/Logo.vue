@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: 'Header',
+    name: 'Logo',
     components:
     {
 
@@ -18,8 +18,7 @@ export default {
 </script>
 
 <template>
-    <Logo></Logo>
-    <Menu></Menu>
+
 </template>
 
 <style></style>
