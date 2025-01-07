@@ -65,8 +65,6 @@ export default {
             </div>
         </div>
     </nav>
-
-
 </template>
 
 <style></style>

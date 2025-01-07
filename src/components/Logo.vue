@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <div class="bg-warning">
+    <div class="bg-warning text-center d-flex justify-content-center align-items-center rounded-5">
         LOGO
     </div>
 </template>

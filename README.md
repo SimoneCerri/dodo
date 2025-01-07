@@ -17,22 +17,22 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - **GUIDA**
 
 ### 🎨 **<span style="color: #F9EBD2"> COLORI </span>** ###
-- #F5BF40
-- #D31C19
-- #BBD9D4
-- #F9EBD2
-- #E4A068
-- #4A2811
+- <span style="color: #E4A068"> Primary </span> (#E4A068)
+- <span style="color: #F9EBD2"> Secondary </span> (#F9EBD2)
+- <span style="color: #F5BF40"> Tertiary </span> (#F5BF40)
+- <span style="color: #BBD9D4"> Soft </span> (#BBD9D4)
+- <span style="color: #4A2811"> Strong </span> (#4A2811)
+- <span style="color: #D31C19"> Warning </span> (#D31C19)
 
 ### 🗚 **<span style="color: #BBD9D4"> FONT </span>** ###
 - Goldplay.
 - Fish Fingers.
 
 ### 🐶 **<span style="color: #D31C19"> LOGO </span>** ###
-- small_logo (cravatta/collare).
-- logo_talkative (logo + frasi).
-- DODO (img medie e grandi).
-- pattern (pattern con piccoli loghi).
+- small_logo (cravatta/collare) .
+- logo_talkative (logo + frasi) .
+- DODO (img medie e grandi) .
+- pattern (pattern con piccoli loghi) .
 
 ### 📚 **<span style="color: #F5BF40"> DOCUMENTATION </span>** ###
 - [Visual Studio Code](https://code.visualstudio.com/) .
@@ -44,8 +44,8 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 
 ### 🔗 **<span style="color: black"> TEAM </span>** ###
 
-- <a href="" style="color: #F5BF40;">ProjectDirector : Valeria</a>
-- <a href="" style="color: #F9EBD2;">Designer : Alessia</a>
+- <a href="" style="color: #F5BF40;">ProjectDirector : Valeria</a> .
+- <a href="" style="color: #F9EBD2;">Designer : Alessia</a> .
 - <a href="" style="color: #BBD9D4;">WebDeveloper : Simone</a> .
 
 
