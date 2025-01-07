@@ -45,16 +45,16 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 
 ### 🔗 **<span style="color: black"> TEAM </span>** ###
 
-- <a href="" style="color: #F5BF40;">ProjectDirector : Valeria</a> .
-- <a href="" style="color: #F9EBD2;">Designer : Alessia</a> .
-- <a href="" style="color: #BBD9D4;">WebDeveloper : Simone</a> .
+- <a href="https://www.instagram.com/wolly_makeup.art.magic?igsh=MXFmcjlsMDRyMmZldg==" target="_blank" rel="noreferrer noopener" style="color: #F5BF40;">ProjectDirector : Wolly</a> .
+- <a href="https://www.instagram.com/peach__design?igsh=MXV5OG03cnVwenh6dA==" target="_blank" rel="noreferrer noopener" style="color: #F9EBD2;">Designer : Peach</a> .
+- <a href="https://github.com/SimoneCerri" target="_blank" rel="noreferrer noopener" style="color: #BBD9D4;">WebDeveloper : ScorpioN</a> .
 
 
 <!--
 #### TO DO ####
 - Readme [ ]
-    - Docs Links [ ]
-    - Team Links [ ]
+    - Docs Links [X]
+    - Team Links [X]
 - ColorRoot [ ]
 - App [ ]
     - Header [ ]
