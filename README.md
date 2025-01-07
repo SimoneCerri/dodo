@@ -23,6 +23,7 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - <span style="color: #BBD9D4"> Soft </span> (#BBD9D4)
 - <span style="color: #4A2811"> Strong </span> (#4A2811)
 - <span style="color: #D31C19"> Warning </span> (#D31C19)
+- <span style="color: #333"> Dark </span> (#333)
 
 ### 🗚 **<span style="color: #BBD9D4"> FONT </span>** ###
 - Goldplay.
