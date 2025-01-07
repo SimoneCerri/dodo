@@ -46,7 +46,7 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 ### 🔗 **<span style="color: black"> TEAM </span>** ###
 
 - <a href="https://www.instagram.com/wolly_makeup.art.magic?igsh=MXFmcjlsMDRyMmZldg==" target="_blank" rel="noreferrer noopener" style="color: #F5BF40;">ProjectDirector : Wolly</a> .
-- <a href="https://www.instagram.com/peach__design?igsh=MXV5OG03cnVwenh6dA==" target="_blank" rel="noreferrer noopener" style="color: #F9EBD2;">Designer : Peach</a> .
+- <a href="https://behance.net/peach_design" target="_blank" rel="noreferrer noopener" style="color: #F9EBD2;">Designer : PeachDesign</a> .
 - <a href="https://github.com/SimoneCerri" target="_blank" rel="noreferrer noopener" style="color: #BBD9D4;">WebDeveloper : ScorpioN</a> .
 
 
