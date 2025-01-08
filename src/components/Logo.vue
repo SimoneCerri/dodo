@@ -18,9 +18,15 @@ export default {
 </script>
 
 <template>
-    <div class="bg-warning text-center d-flex justify-content-center align-items-center rounded-5">
+    <div class="bg-warning text-center d-flex justify-content-center align-items-center mine_rounded">
         LOGO
     </div>
 </template>
 
-<style></style>
+<style scoped>
+.mine_rounded {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+</style>

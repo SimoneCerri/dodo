@@ -21,10 +21,21 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex justify-content-between px-5">
-        <Logo class="mt-3"></Logo>
-        <Menu></Menu>
+    <div class="d-flex align-items-center justify-content-evenly py-5">
+        <div class="containter">
+            <div class="row">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <Logo class="mine_logo"></Logo>
+                </div>
+                <div class="col-4 ps-5">
+                    <Menu class="menu"></Menu>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
-<style></style>
+<style scoped></style>
