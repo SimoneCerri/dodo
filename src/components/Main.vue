@@ -42,23 +42,116 @@ export default {
         </a>
     </section>
     <section id="mission">
+        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
+            <div class="col-8 d-flex flex-column align-items-center">
+                <h1>
+                    E' TUTTO PIU' FACILE CON
+                    <span class="">
+                        DODO
+                    </span>
+                </h1>
+                <button class="">
+                    SCOPRI
+                </button>
+            </div>
+            <div class="col-8">
+                <img src="https://picsum.photos/200" alt="">
+            </div>
+        </div>
+        <a href="#MISSION" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+            <div class="next_session_banner">
+                NEXT SESSION
+            </div>
+        </a>
     </section>
     <section id="about_us">
+        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
+            <div class="col-8 d-flex flex-column align-items-center">
+                <h1>
+                    E' TUTTO PIU' FACILE CON
+                    <span class="">
+                        DODO
+                    </span>
+                </h1>
+                <button class="">
+                    SCOPRI
+                </button>
+            </div>
+            <div class="col-8">
+                <img src="https://picsum.photos/200" alt="">
+            </div>
+        </div>
+        <a href="#MISSION" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+            <div class="next_session_banner">
+                NEXT SESSION
+            </div>
+        </a>
     </section>
     <section id="services">
+        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
+            <div class="col-8 d-flex flex-column align-items-center">
+                <h1>
+                    E' TUTTO PIU' FACILE CON
+                    <span class="">
+                        DODO
+                    </span>
+                </h1>
+                <button class="">
+                    SCOPRI
+                </button>
+            </div>
+            <div class="col-8">
+                <img src="https://picsum.photos/200" alt="">
+            </div>
+        </div>
+        <a href="#MISSION" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+            <div class="next_session_banner">
+                NEXT SESSION
+            </div>
+        </a>
     </section>
-    <section id="contacs">
+    <section id="contacts">
+        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
+            <div class="col-8 d-flex flex-column align-items-center">
+                <h1>
+                    E' TUTTO PIU' FACILE CON
+                    <span class="">
+                        DODO
+                    </span>
+                </h1>
+                <button class="">
+                    SCOPRI
+                </button>
+            </div>
+            <div class="col-8">
+                <img src="https://picsum.photos/200" alt="">
+            </div>
+        </div>
+        <a href="#MISSION" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+            <div class="next_session_banner">
+                NEXT SESSION
+            </div>
+        </a>
     </section>
 </template>
 
 <style scoped>
-#call_to_action {
+section {
+    margin-bottom: 100px;
+}
+
+#call_to_action,
+#mission,
+#about_us,
+#services,
+#contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: palegoldenrod;
     width: 100%;
     height: 75vh;
+    position: relative;
 
     h1 {
         color: red;
