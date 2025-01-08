@@ -76,5 +76,17 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - Assets [ ]
     - Img [ ]
     - Css [ ]
+- Hot to test scroll on mobile from pc
+- SEO
+- DEPLOY
 - Presentation [ ]
+    -General view
+        - Good and easy UI/UX
+            - Both young and older
+            - Both mobile and desktop
+            - Both scroll and switch-to-section
+        - Logo + Menu
+            - Clicks to sections test
+        - Sections
+            - Smooth scrolls (?)
 -->
