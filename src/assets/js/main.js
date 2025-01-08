@@ -1,8 +1,20 @@
 import { createApp } from 'vue'
-import '../style/style.css'
-import App from '../../App.vue'
+
 /* ### CSS-LINK ### */
+import '../style/style.css'
+
+import App from '../../App.vue'
+
+/* ### BOOTSTRAP-LINK ### */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
-createApp(App).mount('#app')
+/* ### FONTAWESOME-LINK ### */
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUser, faHome, faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+library.add(faUser, faHome, faAnglesDown);
+
+createApp(App)
+    .component('font-awesome-icon', FontAwesomeIcon)
+    .mount('#app');

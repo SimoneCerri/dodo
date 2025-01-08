@@ -42,6 +42,7 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - [Vite](https://vite.dev/) .
 - [GoogleFont](https://fonts.google.com/) .
 - [Bootstrap](https://getbootstrap.com/) .
+- [FontAwesome](https://fontawesome.com/) .
 
 ### 🔗 **<span style="color: black"> TEAM </span>** ###
 

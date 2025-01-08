@@ -46,6 +46,8 @@ export default {
         <a href="#mission" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 LA NOSTRA MISSIONE
+                <br>
+                <font-awesome-icon icon="angles-down" />
             </div>
         </a>
     </section>
@@ -77,6 +79,8 @@ export default {
         <a href="#about_us" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 CHI SIAMO
+                <br>
+                <font-awesome-icon icon="angles-down" />
             </div>
         </a>
     </section>
@@ -108,6 +112,8 @@ export default {
         <a href="#services" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 SERVIZI
+                <br>
+                <font-awesome-icon icon="angles-down" />
             </div>
         </a>
     </section>
@@ -139,6 +145,8 @@ export default {
         <a href="#contacts" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 CONTATTI
+                <br>
+                <font-awesome-icon icon="angles-down" />
             </div>
         </a>
     </section>
@@ -169,7 +177,9 @@ export default {
         </div>
         <a href="#call_to_action" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
-                E' PIU' FACILE CON DODO
+                E' PIU' FACILE CON DODO !
+                <br>
+                <font-awesome-icon icon="angles-down" />
             </div>
         </a>
     </section>
@@ -178,6 +188,7 @@ export default {
 <style scoped>
 section {
     margin-bottom: 10em;
+    margin-top: 10em;
 }
 
 #call_to_action,
