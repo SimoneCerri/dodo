@@ -22,7 +22,7 @@ export default {
 
 <template>
     <header>
-        <div class="d-flex align-items-center justify-content-evenly py-5">
+        <div class="d-flex align-items-center justify-content-evenly mt-5">
             <div class="containter">
                 <div class="row">
                     <div class="col-4">
@@ -46,6 +46,5 @@ header {
     top: 0%;
     width: 100%;
     z-index: 1000;
-    /* margin-bottom: 10em; */
 }
 </style>
