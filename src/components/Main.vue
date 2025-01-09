@@ -101,28 +101,30 @@ export default {
         </a>
     </section>
     <section id="about_us" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                <div class="col-8 d-flex justify-content-center">
-                    <h1>
-                        E' TUTTO PIU'
+        <div class="row flex-column align-items-center justify-content-start h-100 mb-5 gap-3">
+            <div class="col-12">
+                <img src="https://picsum.photos/300" alt="" class="rounded-0">
+            </div>
+            <div class="col-10 d-flex flex-column">
+                <div class="col-1 d-flex">
+                    <h1 class="text-start">
+                        CHI
                         <br>
-                        FACILE CON
+                        SIAMO ?
                     </h1>
                 </div>
-                <div class="col-8 d-flex justify-content-center">
-                    <span class="text-center">
-                        DODO
-                    </span>
+                <div class="col-12 d-flex">
+                    <p class="text-start">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, incidunt earum saepe natus
+                        quod fugit consequatur perspiciatis? Hic unde commodi, deserunt nam reiciendis dolorum ducimus
+                        animi repellendus natus incidunt dolor.
+                    </p>
                 </div>
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-6 d-flex justify-content-center align-items-center">
                     <button class="">
                         SCOPRI
                     </button>
                 </div>
-            </div>
-            <div class="col-12">
-                <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
