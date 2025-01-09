@@ -22,7 +22,7 @@ export default {
         <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center">
-                    <h1>
+                    <h1 class="mine_title">
                         E' TUTTO PIU'
                         <br>
                         FACILE CON
@@ -33,7 +33,7 @@ export default {
                         DODO
                     </span>
                 </div>
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-8 d-flex justify-content-center w-100">
                     <button class="">
                         SCOPRI
                     </button>
@@ -43,50 +43,29 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#mission" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
-    <section id="mission" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-start h-100 mb-5">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center gap-3">
-                <div class="col-10 d-flex justify-content-center">
-                    DODO offre soluzioni create su misura da un team di professionisti per accompagnare,
-                    informando, il clente in un persocorso di scelta libera.
-                </div>
-                <div class="col-10 d-flex justify-content-center">
-                    L'obbiettivo è avere un DODO in ogni famiglia che accompagna e guida verso la migliore
-                    soluzione tailor made sul mercato. Permette quindi alla famiglia di avere più tempo per se,
-                    meno pensieri e risultati garantiti.
-                </div>
-                <div class="col-10 d-flex justify-content-center">
-                    La consulenza con DOOD vuole essere un punto focale: il consulente è formato per ascoltare
-                    ed empatizzare, per avere un quadro chiaro dell'interlocutore ed offrirgli il servizio
-                    personalizzato migliore possibile, tenendo conto solamente delle esigenze del cliente.
+    <section id="services" class="pt-5">
+        <div class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w">
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-8 d-flex justify-content-center">
+                    <h1>
+                        I NOSTRI
+                        <br>
+                        SERVIZI
+                    </h1>
                 </div>
             </div>
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center gap-1 mb-3">
-                <div href="#about_us" class="btn btn-dark rounded-5 mine_w">
-                    <div class="">
-                        Empatia
-                    </div>
-                </div>
-                <div href="#about_us" class="btn btn-dark rounded-5 mine_w">
-                    <div class="">
-                        Fiducia
-                    </div>
-                </div>
-                <div href="#about_us" class="btn btn-dark rounded-5 mine_w">
-                    <div class="">
-                        Professionalità
-                    </div>
-                </div>
-                <div href="" class="btn btn-dark rounded-5 mine_w">
-                    <div class="">
-                        Guida
-                    </div>
+            <div class="col-10 d-flex flex-column justify-content-center align-items-center">
+                <div class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beatae, eius corporis pariatur
+                    mollitia autem illo. Ratione ab earum atque suscipit vel id odio beatae tenetur, veniam sequi est?
+                    Dignissimos maiores molestiae officiis expedita, iste iusto hic ipsum consequuntur adipisci error
+                    quibusdam, rem ipsa quisquam aliquid rerum ullam corporis nam!
                 </div>
             </div>
         </div>
@@ -98,99 +77,94 @@ export default {
     </section>
     <section id="about_us" class="pt-5">
         <div class="row flex-column align-items-center justify-content-start h-100 mb-5 gap-3">
-            <div class="col-12">
-                <img src="https://picsum.photos/300" alt="" class="rounded-0">
+            <div class="col-12 d-flex justify-content-center align-items-center gap-5">
+                <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
+                <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
+                <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
             </div>
-            <div class="col-10 d-flex flex-column">
-                <div class="col-1 d-flex">
-                    <h1 class="text-start">
-                        CHI
-                        <br>
-                        SIAMO ?
-                    </h1>
+            <div
+                class="col-8 d-flex flex-column justify-content-center align-items-center gap-5 bg-success about_us_card">
+                <div class="col-10 d-flex justify-content-center align-items-center">
+                    <h2 class="text-center">
+                        Nome Cognome
+                    </h2>
                 </div>
-                <div class="col-12 d-flex">
-                    <p class="text-start">
+                <div class="col-10 d-flex justify-content-center align-items-center">
+                    <p class="text-center">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, incidunt earum saepe natus
                         quod fugit consequatur perspiciatis? Hic unde commodi, deserunt nam reiciendis dolorum ducimus
                         animi repellendus natus incidunt dolor.
                     </p>
                 </div>
-                <div class="col-6 d-flex justify-content-center align-items-center">
-                    <button class="">
-                        SCOPRI
-                    </button>
-                </div>
             </div>
         </div>
-        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#mission" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
-    <section id="services" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+    <section id="mission" class="pt-5">
+        <div class="row text-center flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w">
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center">
                     <h1>
-                        E' TUTTO PIU'
+                        LA NOSTRA
                         <br>
-                        FACILE CON
+                        MISSION
                     </h1>
                 </div>
-                <div class="col-8 d-flex justify-content-center">
-                    <span class="text-center">
-                        DODO
-                    </span>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="">
-                        SCOPRI
-                    </button>
-                </div>
             </div>
-            <div class="col-12">
-                <img src="https://picsum.photos/300" alt="">
+            <div class="col-10 d-flex flex-column justify-content-center align-items-center">
+                <div class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beatae, eius corporis pariatur
+                    mollitia autem illo. Ratione ab earum atque suscipit vel id odio beatae tenetur, veniam sequi est?
+                    Dignissimos maiores molestiae officiis expedita, iste iusto hic ipsum consequuntur adipisci error
+                    quibusdam, rem ipsa quisquam aliquid rerum ullam corporis nam!
+                </div>
             </div>
         </div>
-        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#contacts" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
     <section id="contacts" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                <div class="col-8 d-flex justify-content-center">
-                    <h1>
-                        E' TUTTO PIU'
-                        <br>
-                        FACILE CON
-                    </h1>
+        <div class="container">
+            <h1 class="text-center py-5">
+                CONTATTI
+            </h1>
+            <div class="row justify-content-center align-items-center gap-3 flex-nowrap px-3">
+                <div class="col-6 p-0">
+                    <div class="card bg-warning text-center border-0">
+                        <div class="card-body">
+                            <h4 class="card-title py-3">TORINO</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+                                facilis recusandae exercitationem saepe maiores facere a nisi id veniam amet, laboriosam
+                                minima fuga voluptate, doloribus libero assumenda perspiciatis nesciunt. Veniam?</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-8 d-flex justify-content-center">
-                    <span class="text-center">
-                        DODO
-                    </span>
+                <div class="col-6 p-0">
+                    <div class="card bg-danger text-center border-0">
+                        <div class="card-body">
+                            <h4 class="card-title py-3">TORINO</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+                                facilis recusandae exercitationem saepe maiores facere a nisi id veniam amet, laboriosam
+                                minima fuga voluptate, doloribus libero assumenda perspiciatis nesciunt. Veniam?</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="">
-                        SCOPRI
-                    </button>
-                </div>
-            </div>
-            <div class="col-12">
-                <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
-            <div class="next_session_banner">
-                <font-awesome-icon icon="circle-chevron-down" />
-            </div>
-        </a>
     </section>
+    <a href="#call_to_action" class="btn_up btn">
+        <div class="next_session_img">
+            <!-- <font-awesome-icon icon="circle-chevron-up" /> -->
+            <img src="https://picsum.photos/50" alt="">
+        </div>
+    </a>
 </template>
 
 <style scoped>
@@ -207,17 +181,17 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: palegoldenrod;
+    /* background: palegoldenrod; */
     width: 100%;
     height: 100vh;
     position: relative;
 
-    h1 {
+    .mine_title {
         color: #333;
         text-align: center;
         margin-bottom: -15%;
         white-space: nowrap;
-        font-size: 2em;
+        font-size: 3em;
     }
 
     span {
@@ -262,6 +236,36 @@ section {
         svg {
             height: 35px;
         }
+    }
+
+    .about_us_card {
+        position: absolute;
+        bottom: 12%;
+        padding-top: 7em;
+        padding-bottom: 2em;
+        border-radius: 20px;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+.btn_up {
+    position: fixed;
+    bottom: 25%;
+    left: 68%;
+    /* height: 12vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.next_session_img {
+
+    img {
+        height: 70px;
+        width: 50px;
+        border-radius: 40%;
     }
 }
 </style>

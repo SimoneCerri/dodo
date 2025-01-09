@@ -55,19 +55,24 @@ export default {
                             Home
                         </a>
                     </li>
-                    <li class="nav-item text-nowrap">
-                        <a class="nav-link" href="#about_us">
-                            Chi Siamo
-                        </a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">
                             Servizi
                         </a>
                     </li>
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link" href="#about_us">
+                            Chi siamo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mission">
+                            Mission
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacts">
-                            Contatti
+                            Contacts
                         </a>
                     </li>
                 </ul>
