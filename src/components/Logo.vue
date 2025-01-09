@@ -19,7 +19,7 @@ export default {
 
 <template>
     <div class="bg-warning text-center d-flex justify-content-center align-items-center mine_rounded">
-        LOGO
+        <a href="#call_to_action">LOGO</a>
     </div>
 </template>
 
@@ -28,5 +28,10 @@ export default {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
 }
 </style>
