@@ -43,7 +43,7 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#mission" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#mission" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 LA NOSTRA MISSIONE
                 <br>
@@ -55,28 +55,44 @@ export default {
         <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center">
-                    <h1>
-                        E' TUTTO PIU'
-                        <br>
-                        FACILE CON
-                    </h1>
+                    DODO offre soluzioni create su misura da un team di professionisti per accompagnare,
+                    informando, il clente in un persocorso di scelta libera.
                 </div>
                 <div class="col-8 d-flex justify-content-center">
-                    <span class="text-center">
-                        DODO
-                    </span>
+                    L'obbiettivo è avere un DODO in ogni famiglia che accompagna e guida verso la migliore
+                    soluzione tailor made sul mercato. Permette quindi alla famiglia di avere più tempo per se,
+                    meno pensieri e risultati garantiti.
                 </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="">
-                        SCOPRI
-                    </button>
+                <div class="col-8 d-flex justify-content-center">
+                    La consulenza con DOOD vuole essere un punto focale: il consulente è formato per ascoltare
+                    ed empatizzare, per avere un quadro chiaro dell'interlocutore ed offrirgli il servizio
+                    personalizzato migliore possibile, tenendo conto solamente delle esigenze del cliente.
                 </div>
             </div>
-            <div class="col-12">
-                <img src="https://picsum.photos/300" alt="">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                <a href="#about_us" class="btn btn-dark">
+                    <div class="">
+                        Empatia
+                    </div>
+                </a>
+                <a href="#about_us" class="btn btn-dark">
+                    <div class="">
+                        Fiducia
+                    </div>
+                </a>
+                <a href="#about_us" class="btn btn-dark">
+                    <div class="">
+                        Professionalità
+                    </div>
+                </a>
+                <a href="#about_us" class="btn btn-dark">
+                    <div class="">
+                        Guida
+                    </div>
+                </a>
             </div>
         </div>
-        <a href="#about_us" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#about_us" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 CHI SIAMO
                 <br>
@@ -109,7 +125,7 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#services" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#services" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 SERVIZI
                 <br>
@@ -142,7 +158,7 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#contacts" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#contacts" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 CONTATTI
                 <br>
@@ -175,7 +191,7 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#call_to_action" class="btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#call_to_action" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
             <div class="next_session_banner">
                 E' PIU' FACILE CON DODO !
                 <br>
@@ -236,7 +252,7 @@ section {
         border-radius: 20px;
     }
 
-    a {
+    .btn_next {
         position: absolute;
         bottom: -12%;
         height: 12vh;

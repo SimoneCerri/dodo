@@ -7,7 +7,7 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 ## ⭐ **<span style="color: #F5BF40"> VISION & MISSION </span>** ##
 
 - DODO offre ***soluzioni create su misura*** da un team di professionisti per ***accompagnare***, informando, il clente in un persocorso di ***scelta libera***.
-- L'obbiettivo è ***avere un DODO in ogni famiglia*** che accompagna e guida verso la migliore soluzione ***tailor made*** sul mercato. Permette quindi alla famiglia di avere ***più tempo per se, meno pensieri e risultati garantiti.***
+- L'obbiettivo è ***avere un DODO in ogni famiglia*** che accompagna e guida verso la migliore soluzione ***tailor made*** sul mercato. Permette quindi alla famiglia di avere ***più tempo per se, meno pensieri e risultati garantiti***.
 - La ***consulenza*** con DOOD vuole essere un punto focale: il consulente è ***formato per ascoltare ed empatizzare***, per avere un quadro chiaro dell'interlocutore ed offrirgli il ***servizio personalizzato migliore possibile***, tenendo conto solamente delle esigenze del cliente.
 
 ### 🗝️ **<span style="color: #E4A068"> PAROLE CHIAVE </span>** ###
