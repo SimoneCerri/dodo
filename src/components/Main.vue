@@ -92,7 +92,7 @@ export default {
         </div>
         <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                <font-awesome-icon icon="angles-down" style="width: 100px;" />
+                <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
@@ -125,7 +125,7 @@ export default {
         </div>
         <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                <font-awesome-icon icon="angles-down" />
+                <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
@@ -156,7 +156,7 @@ export default {
         </div>
         <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                <font-awesome-icon icon="angles-down" />
+                <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
@@ -187,7 +187,7 @@ export default {
         </div>
         <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                <font-awesome-icon icon="angles-down" />
+                <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
@@ -257,6 +257,11 @@ section {
         width: 85%;
     }
 
-    .next_session_banner {}
+    .next_session_banner {
+
+        svg {
+            height: 35px;
+        }
+    }
 }
 </style>
