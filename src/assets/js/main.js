@@ -11,9 +11,9 @@ import 'bootstrap';
 
 /* ### FONTAWESOME-LINK ### */
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUser, faHome, faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faHome, faAnglesDown, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-library.add(faUser, faHome, faAnglesDown);
+library.add(faUser, faHome, faAnglesDown, faChevronCircleDown);
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

@@ -43,16 +43,14 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#mission" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#mission" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                LA NOSTRA MISSIONE
-                <br>
-                <font-awesome-icon icon="angles-down" />
+                <font-awesome-icon icon="circle-chevron-down" />
             </div>
         </a>
     </section>
     <section id="mission" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
+        <div class="row flex-column align-items-center justify-content-start h-100 mb-5">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center gap-3">
                 <div class="col-10 d-flex justify-content-center">
                     DODO offre soluzioni create su misura da un team di professionisti per accompagnare,
@@ -92,11 +90,9 @@ export default {
                 </div>
             </div>
         </div>
-        <a href="#about_us" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                CHI SIAMO
-                <br>
-                <font-awesome-icon icon="angles-down" />
+                <font-awesome-icon icon="angles-down" style="width: 100px;" />
             </div>
         </a>
     </section>
@@ -127,10 +123,8 @@ export default {
                 </div>
             </div>
         </div>
-        <a href="#services" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                SERVIZI
-                <br>
                 <font-awesome-icon icon="angles-down" />
             </div>
         </a>
@@ -160,10 +154,8 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#contacts" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                CONTATTI
-                <br>
                 <font-awesome-icon icon="angles-down" />
             </div>
         </a>
@@ -193,10 +185,8 @@ export default {
                 <img src="https://picsum.photos/300" alt="">
             </div>
         </div>
-        <a href="#call_to_action" class="btn_next btn btn-dark rounded-top-4 rounded-bottom-0 w-75">
+        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
-                E' PIU' FACILE CON DODO !
-                <br>
                 <font-awesome-icon icon="angles-down" />
             </div>
         </a>
@@ -256,7 +246,7 @@ section {
 
     .btn_next {
         position: absolute;
-        bottom: -2%;
+        bottom: 5%;
         height: 12vh;
         display: flex;
         justify-content: center;
@@ -266,5 +256,7 @@ section {
     .mine_w {
         width: 85%;
     }
+
+    .next_session_banner {}
 }
 </style>

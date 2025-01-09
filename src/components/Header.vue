@@ -22,7 +22,7 @@ export default {
 
 <template>
     <header>
-        <div class="d-flex align-items-center justify-content-evenly mt-5">
+        <div class="d-flex align-items-center justify-content-evenly">
             <div class="containter">
                 <div class="row">
                     <div class="col-4">
@@ -42,9 +42,9 @@ export default {
 
 <style scoped>
 header {
-    position: fixed;
+    /* position: fixed;
     top: 0%;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; */
 }
 </style>
