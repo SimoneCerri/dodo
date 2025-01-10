@@ -18,20 +18,19 @@ export default {
 </script>
 
 <template>
-    <div class="bg-warning text-center d-flex justify-content-center align-items-center mine_rounded">
-        <a href="#call_to_action">LOGO</a>
+    <div class="d-flex justify-content-center align-items-center mine_rounded">
+        <a href="#call_to_action">
+            <img src="../assets/img/logo_marrone.png" alt="">
+        </a>
     </div>
 </template>
 
 <style scoped>
-.mine_rounded {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-
 a {
     text-decoration: none;
-    color: #333;
+
+    img {
+        width: 50px;
+    }
 }
 </style>

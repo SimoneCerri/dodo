@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <section id="call_to_action" class="pt-5">
+    <section id="call_to_action" class="">
         <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center">
@@ -159,7 +159,7 @@ export default {
             </div>
         </div>
     </section>
-    <a href="#call_to_action" class="btn_up btn">
+    <a href="#header" class="btn_up btn">
         <div class="next_session_img">
             <!-- <font-awesome-icon icon="circle-chevron-up" /> -->
             <img src="https://picsum.photos/50" alt="">
