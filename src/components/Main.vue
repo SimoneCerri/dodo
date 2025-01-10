@@ -142,7 +142,7 @@ export default {
             </div>
         </a>
     </section>
-    <section id="mission" class="pt-5">
+    <section id="mission" class="pt-5" style="color: var(--strong-color);">
         <div class="row text-center flex-column align-items-center justify-content-start h-100 mine_w gap-3">
             <div class="col-10 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center text-nowrap">
@@ -182,12 +182,12 @@ export default {
     </section>
     <section id="contacts" class="pt-5 mt-3">
         <div class="container mine_h">
-            <h1 class="text-center">
+            <h1 class="text-center" style="color: var(--strong-color);">
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
                 <div class="col-10 p-3 bg-warning rounded-4">
-                    <div class="row">
+                    <div class="row" style="color: var(--strong-color);">
                         <div class="col-4 d-flex justify-content-center align-items-center">
                             <font-awesome-icon icon="circle-chevron-down" />
                         </div>
@@ -214,7 +214,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-10 p-3 bg-success rounded-4">
-                    <div class="row">
+                    <div class="row" style="color: var(--light-color);">
                         <div class="col-4 d-flex justify-content-center align-items-center">
                             <font-awesome-icon icon="circle-chevron-down" />
                         </div>
@@ -251,22 +251,26 @@ export default {
                 </div>
                 <div class="col-4">
                     <div class="row flex-column">
-                        <div class="col-4 fw-bold fs-3">
+                        <div class="col-4 fw-bold fs-3" style="color: var(--strong-color);">
                             SEGUICI!
                         </div>
-                        <div class="col-4 ms-3">
+                        <div class="col-4 ms-2">
                             <div class="row flex-nowrap">
-                                <div class="col-12">
+                                <div class="col-12 p-0">
                                     <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                         <div class="social_icon">
-                                            <font-awesome-icon icon="facebook" />
+                                            <!-- <font-awesome-icon icon="facebook" style="font-size: 2em; color: var(--strong-color);" /> -->
+                                            <font-awesome-icon icon="circle-chevron-down"
+                                                style="font-size: 2em; color: var(--strong-color);" />
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 p-0">
                                     <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                         <div class="social_icon">
-                                            <font-awesome-icon icon="instagram" />
+                                            <!-- <font-awesome-icon icon="instagram" style="font-size: 2em; color: var(--strong-color);" /> -->
+                                            <font-awesome-icon icon="circle-chevron-down"
+                                                style="font-size: 2em; color: var(--strong-color);" />
                                         </div>
                                     </a>
                                 </div>
@@ -483,18 +487,6 @@ export default {
         width: 200px;
     }
 
-    .social_icon {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-.social_icon font-awesome-icon {
-    font-size: 10rem;
 }
 
 .next_session_img {
