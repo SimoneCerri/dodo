@@ -11,13 +11,29 @@ export default {
     },
     data() {
         return {
-
+            showBackToTop: false,
         }
     },
     methods: {
         handleClick(event) {
             console.log("Button clicked!");
         },
+        handleScroll() {
+            if (window.scrollY > 100) {
+                this.showBackToTop = true;
+            } else {
+                this.showBackToTop = false;
+            }
+        },
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
+    },
+    mounted() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.handleScroll);
     },
 }
 </script>
@@ -193,10 +209,9 @@ export default {
             </div>
         </div>
     </section>
-    <a href="#" class="btn_up btn">
+    <a href="#" class="btn_up btn" v-show="showBackToTop" @click="scrollToTop">
         <div class="next_session_img">
-            <!-- <font-awesome-icon icon="circle-chevron-up" /> -->
-            <img src="https://picsum.photos/50" alt="">
+            <img src="/src/assets/img/logo_marrone.png" alt="">
         </div>
     </a>
 </template>
@@ -265,25 +280,6 @@ export default {
         border-radius: 20px;
         position: relative;
         z-index: -1;
-    }
-}
-
-.btn_up {
-    position: fixed;
-    bottom: 25%;
-    left: 68%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.next_session_img {
-
-    img {
-        height: 70px;
-        width: 50px;
-        border-radius: 40%;
     }
 }
 
@@ -405,4 +401,23 @@ export default {
 }
 
 #contacts {}
+
+.next_session_img {
+
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 40%;
+    }
+}
+
+.btn_up {
+    position: fixed;
+    bottom: 20%;
+    right: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 </style>
