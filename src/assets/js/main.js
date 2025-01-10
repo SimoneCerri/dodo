@@ -12,8 +12,9 @@ import 'bootstrap';
 /* ### FONTAWESOME-LINK ### */
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faHome, faAnglesDown, faChevronCircleDown, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-library.add(faUser, faHome, faAnglesDown, faChevronCircleDown, faChevronCircleUp);
+library.add(faUser, faHome, faAnglesDown, faChevronCircleDown, faChevronCircleUp, faFacebook, faInstagram);
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

@@ -181,28 +181,96 @@ export default {
         </a>
     </section>
     <section id="contacts" class="pt-5 mt-3">
-        <div class="container">
-            <h1 class="text-center py-5">
+        <div class="container mine_h">
+            <h1 class="text-center">
                 CONTATTI
             </h1>
-            <div class="row justify-content-center align-items-center gap-3 flex-nowrap px-3">
-                <div class="col-6 p-0">
-                    <div class="card bg-warning text-center border-0">
-                        <div class="card-body">
-                            <h4 class="card-title py-3">TORINO</h4>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-                                facilis recusandae exercitationem saepe maiores facere a nisi id veniam amet, laboriosam
-                                minima fuga voluptate, doloribus libero assumenda perspiciatis nesciunt. Veniam?</p>
+            <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
+                <div class="col-10 p-3 bg-warning rounded-4">
+                    <div class="row">
+                        <div class="col-4 d-flex justify-content-center align-items-center">
+                            <font-awesome-icon icon="circle-chevron-down" />
+                        </div>
+                        <div class="col-8">
+                            <div class="row flex-column gap-3">
+                                <div class="col-6 fw-bold">
+                                    TORINO
+                                </div>
+                                <div class="col-6">
+                                    <div class="row flex-column gap-1 text-nowrap">
+                                        <div class="col-4">
+                                            Via le dita
+                                        </div>
+                                        <div class="col-4">
+                                            Telefono
+                                        </div>
+                                        <div class="col-4">
+                                            E-mail
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 p-0">
-                    <div class="card bg-danger text-center border-0">
-                        <div class="card-body">
-                            <h4 class="card-title py-3">TORINO</h4>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
-                                facilis recusandae exercitationem saepe maiores facere a nisi id veniam amet, laboriosam
-                                minima fuga voluptate, doloribus libero assumenda perspiciatis nesciunt. Veniam?</p>
+                <div class="col-10 p-3 bg-success rounded-4">
+                    <div class="row">
+                        <div class="col-4 d-flex justify-content-center align-items-center">
+                            <font-awesome-icon icon="circle-chevron-down" />
+                        </div>
+                        <div class="col-8">
+                            <div class="row flex-column gap-3">
+                                <div class="col-6 fw-bold">
+                                    TORINO
+                                </div>
+                                <div class="col-6">
+                                    <div class="row flex-column gap-1 text-nowrap">
+                                        <div class="col-4">
+                                            Via le dita
+                                        </div>
+                                        <div class="col-4">
+                                            Telefono
+                                        </div>
+                                        <div class="col-4">
+                                            E-mail
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="follow_us">
+        <div class="container h-100 pt-5">
+            <div class="row justify-content-evenly align-items-center gap-5">
+                <div class="col-4 me-5">
+                    <img src="../assets/img/door2door_marrone.png" alt="">
+                </div>
+                <div class="col-4">
+                    <div class="row flex-column">
+                        <div class="col-4 fw-bold fs-3">
+                            SEGUICI!
+                        </div>
+                        <div class="col-4 ms-3">
+                            <div class="row flex-nowrap">
+                                <div class="col-12">
+                                    <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+                                        <div class="social_icon">
+                                            <font-awesome-icon icon="facebook" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+                                        <div class="social_icon">
+                                            <font-awesome-icon icon="instagram" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -400,7 +468,34 @@ export default {
     }
 }
 
-#contacts {}
+#contacts {
+
+    .mine_h {
+        height: 100vh;
+    }
+}
+
+#follow_us {
+    background-color: var(--tertiary-color);
+    height: 12em;
+
+    img {
+        width: 200px;
+    }
+
+    .social_icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.social_icon font-awesome-icon {
+    font-size: 10rem;
+}
 
 .next_session_img {
 
