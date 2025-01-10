@@ -14,6 +14,11 @@ export default {
 
         }
     },
+    methods: {
+        handleClick(event) {
+            console.log("Button clicked!");
+        },
+    },
 }
 </script>
 
@@ -49,7 +54,8 @@ export default {
     </section>
     <section id="services" class="pt-5 mine_bg_secondary">
         <div
-            class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center">
+            class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center px-5">
+
             <div id="services_title" class="col d-flex justify-content-center align-items-center">
                 I NOSTRI
                 <br>
@@ -175,7 +181,7 @@ export default {
             </div>
         </div>
     </section>
-    <a href="#header" class="btn_up btn">
+    <a href="#" class="btn_up btn">
         <div class="next_session_img">
             <!-- <font-awesome-icon icon="circle-chevron-up" /> -->
             <img src="https://picsum.photos/50" alt="">
@@ -316,6 +322,7 @@ export default {
         padding: 0.2em 1em;
         margin: 0.5em 0;
         font-weight: bold;
+        text-wrap: nowrap;
     }
 
     .mine_btn_red {
@@ -330,15 +337,22 @@ export default {
 
 #about_us {
     background-color: var(--secondary-color);
-    z-index: -1;
+
+    img {
+        z-index: 20;
+    }
+
+    .about_us_card {
+        z-index: 10;
+    }
 
     .btn_next {
-        position: absolute;
-        bottom: 14%;
-        height: 12vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        z-index: 10;
+        position: relative;
+    }
+
+    a {
+        pointer-events: auto !important;
     }
 }
 

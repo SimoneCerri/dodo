@@ -19,7 +19,7 @@ export default {
 
 <template>
     <div class="d-flex justify-content-center align-items-center mine_rounded">
-        <a href="#call_to_action">
+        <a href="#">
             <img src="../assets/img/logo_marrone.png" alt="">
         </a>
     </div>

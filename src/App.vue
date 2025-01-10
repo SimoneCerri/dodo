@@ -23,4 +23,10 @@ export default {
   <Footer></Footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* #app {
+  z-index: -1;
+  pointer-events: none;
+  position: relative;
+} */
+</style>
