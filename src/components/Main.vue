@@ -37,8 +37,8 @@ export default {
                     <img src="../assets/img/banner_brown.jpg" alt="" class="">
                 </div>
             </div>
-            <div class="col-12">
-                <!-- <img src="https://picsum.photos/300" alt=""> -->
+            <div class="col-12 mine_runner">
+                <img src="../assets/img/dodo_corre.png" alt="">
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -47,23 +47,41 @@ export default {
             </div>
         </a>
     </section>
-    <section id="services" class="pt-5">
-        <div class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w">
-            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
-                <div class="col-8 d-flex justify-content-center">
-                    <h1>
-                        I NOSTRI
-                        <br>
-                        SERVIZI
-                    </h1>
+    <section id="services" class="">
+        <div
+            class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center">
+            <div id="services_title" class="col d-flex justify-content-center align-items-center">
+                I NOSTRI
+                <br>
+                SERVIZI
+            </div>
+            <div class="col">
+                DODO offre soluzione create su misura da un team di professionisti per accompagnare, informando, il
+                cliente in un percorso di scelta libera.
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                Ecco alcuni dei nostri servizi:
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <div class="mine_btn_brown">
+                    CONSULENZA D'ARREDO
+                </div>
+                <div class="mine_btn_brown">
+                    PROGETTAZIONE DI SPAZI
+                </div>
+                <div class="mine_btn_brown">
+                    RISTRUTTURAZIONI
+                </div>
+                <div class="mine_btn_brown">
+                    TUTELA LEGALE
                 </div>
             </div>
-            <div class="col-10 d-flex flex-column justify-content-center align-items-center">
-                <div class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beatae, eius corporis pariatur
-                    mollitia autem illo. Ratione ab earum atque suscipit vel id odio beatae tenetur, veniam sequi est?
-                    Dignissimos maiores molestiae officiis expedita, iste iusto hic ipsum consequuntur adipisci error
-                    quibusdam, rem ipsa quisquam aliquid rerum ullam corporis nam!
+            <div class="col d-flex justify-content-center align-items-center">
+                Per avere più informazioni e scoprire tutti i nostri servizi
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <div class="mine_btn_red">
+                    CONTATTACI
                 </div>
             </div>
         </div>
@@ -166,11 +184,6 @@ export default {
 </template>
 
 <style scoped>
-section {
-    margin-bottom: 10em;
-    /* margin-top: 10em; */
-}
-
 #call_to_action,
 #mission,
 #about_us,
@@ -179,7 +192,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background: palegoldenrod; */
     width: 100%;
     height: 100vh;
     position: relative;
@@ -279,9 +291,40 @@ section {
         justify-content: center;
         align-items: center;
     }
+
+    .mine_runner {
+        position: absolute;
+        bottom: -30%;
+        left: 15%;
+        overflow: hidden;
+
+        img {
+            width: 700px;
+            overflow: hidden;
+        }
+    }
 }
 
-#services {}
+#services {
+    margin-top: -20%;
+
+    .mine_btn_brown {
+        background-color: var(--strong-color);
+        color: var(--light-color);
+        border-radius: 3em;
+        padding: 0.2em 1em;
+        margin: 0.5em 0;
+        font-weight: bold;
+    }
+
+    .mine_btn_red {
+        background-color: var(--warning-color);
+        color: var(--light-color);
+        border-radius: 3em;
+        padding: 0.6em 3em;
+        font-weight: bold;
+    }
+}
 
 #about_us {}
 
