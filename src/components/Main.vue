@@ -47,7 +47,7 @@ export default {
             </div>
         </a>
     </section>
-    <section id="services" class="">
+    <section id="services" class="pt-5 mine_bg_secondary">
         <div
             class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center">
             <div id="services_title" class="col d-flex justify-content-center align-items-center">
@@ -254,7 +254,6 @@ export default {
     position: fixed;
     bottom: 25%;
     left: 68%;
-    /* height: 12vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,6 +306,8 @@ export default {
 
 #services {
     margin-top: -20%;
+    z-index: 2;
+    background-color: var(--secondary-color);
 
     .mine_btn_brown {
         background-color: var(--strong-color);
@@ -324,11 +325,26 @@ export default {
         padding: 0.6em 3em;
         font-weight: bold;
     }
+
 }
 
-#about_us {}
+#about_us {
+    background-color: var(--secondary-color);
+    z-index: -1;
 
-#mission {}
+    .btn_next {
+        position: absolute;
+        bottom: 14%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#mission {
+    background-color: var(--secondary-color);
+}
 
 #contacts {}
 </style>
