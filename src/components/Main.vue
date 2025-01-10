@@ -98,7 +98,7 @@ export default {
         </a>
     </section>
     <section id="about_us" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-start h-100 mb-5 gap-3">
+        <div class="row flex-column align-items-center justify-content-start h-100 gap-3">
             <div class="col-12 d-flex justify-content-center align-items-center gap-5">
                 <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
                 <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
@@ -127,9 +127,9 @@ export default {
         </a>
     </section>
     <section id="mission" class="pt-5">
-        <div class="row text-center flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w">
-            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
-                <div class="col-8 d-flex justify-content-center">
+        <div class="row text-center flex-column align-items-center justify-content-start h-100 mine_w gap-3">
+            <div class="col-10 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-8 d-flex justify-content-center text-nowrap">
                     <h1>
                         LA NOSTRA
                         <br>
@@ -139,11 +139,23 @@ export default {
             </div>
             <div class="col-10 d-flex flex-column justify-content-center align-items-center">
                 <div class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beatae, eius corporis pariatur
-                    mollitia autem illo. Ratione ab earum atque suscipit vel id odio beatae tenetur, veniam sequi est?
-                    Dignissimos maiores molestiae officiis expedita, iste iusto hic ipsum consequuntur adipisci error
-                    quibusdam, rem ipsa quisquam aliquid rerum ullam corporis nam!
+                    L'obbiettivo è avere un DODO in ogni famiglia che accompagna e guida verso la migliore soluzione
+                    tailor made sul mercato. Permette quindi alla famiglia di avere più tempo per se, meno pensieri e
+                    risultati garantiti.
                 </div>
+            </div>
+            <div class="col-10 d-flex flex-column justify-content-center align-items-center">
+                <div class="text-center">
+                    La consulenza di DODO si propone di avere come punto focale un consulente formato per ascoltare ed
+                    empatizzare, al fine di comprendere chiaramente le esigenze dell'interlocutore e offrirgli il
+                    miglior servizio personalizzato possibile, tenendo conto esclusivamente delle sue necessità.
+                </div>
+            </div>
+        </div>
+        <div class="row text-center flex-column align-items-center justify-content-start h-100 mine_w pt-4">
+            <div class="col-12 d-flex flex-column justify-content-start align-items-center mine_mission_img">
+                <img src="..//assets/img/carpet.jpg" alt="">
+                <img src="..//assets/img/dodo_in_piedi.png" alt="Overlay" class="overlay-img">
             </div>
         </div>
         <a href="#contacts" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -152,7 +164,7 @@ export default {
             </div>
         </a>
     </section>
-    <section id="contacts" class="pt-5">
+    <section id="contacts" class="pt-5 mt-3">
         <div class="container">
             <h1 class="text-center py-5">
                 CONTATTI
@@ -358,6 +370,38 @@ export default {
 
 #mission {
     background-color: var(--secondary-color);
+
+    .btn_next {
+        position: absolute;
+        bottom: -3%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mine_mission_img {
+        position: relative;
+
+        img {
+            height: 50%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .overlay-img {
+            position: absolute;
+            bottom: 25%;
+            right: 30%;
+            width: 300px;
+            height: auto;
+            z-index: 1;
+        }
+    }
+
+    .btn_next {
+        z-index: 10;
+    }
 }
 
 #contacts {}
