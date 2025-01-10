@@ -18,8 +18,8 @@ export default {
 </script>
 
 <template>
-    <section id="call_to_action" class="">
-        <div class="row flex-column align-items-center justify-content-evenly h-100 mb-5">
+    <section id="call_to_action" class="pt-5">
+        <div class="row flex-column align-items-center justify-content-start h-100 mb-5">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center">
                     <h1 class="mine_title">
@@ -33,14 +33,12 @@ export default {
                         DODO
                     </span>
                 </div>
-                <div class="col-8 d-flex justify-content-center w-100">
-                    <button class="">
-                        SCOPRI
-                    </button>
+                <div class="col-8 d-flex justify-content-center w-100 mine_banner">
+                    <img src="../assets/img/banner_brown.jpg" alt="" class="">
                 </div>
             </div>
             <div class="col-12">
-                <img src="https://picsum.photos/300" alt="">
+                <!-- <img src="https://picsum.photos/300" alt=""> -->
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -218,15 +216,6 @@ section {
         border-radius: 20px;
     }
 
-    .btn_next {
-        position: absolute;
-        bottom: 5%;
-        height: 12vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .mine_w {
         width: 85%;
     }
@@ -268,4 +257,35 @@ section {
         border-radius: 40%;
     }
 }
+
+.mine_banner {
+    position: absolute;
+    bottom: 30%;
+    height: 400px;
+    z-index: -1;
+
+    img {
+        border-radius: 0 !important;
+    }
+}
+
+#call_to_action {
+
+    .btn_next {
+        position: absolute;
+        bottom: 14%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#services {}
+
+#about_us {}
+
+#mission {}
+
+#contacts {}
 </style>
