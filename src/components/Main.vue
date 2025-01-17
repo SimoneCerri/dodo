@@ -70,7 +70,7 @@ export default {
     </section>
     <section id="services" class="pt-5 mine_bg_secondary">
         <div
-            class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center px-5">
+            class="row mine_bg_tertiary rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center px-5">
 
             <div id="services_title" class="col d-flex justify-content-center align-items-center">
                 <h1>
@@ -116,7 +116,10 @@ export default {
         </a>
     </section>
     <section id="about_us" class="pt-5">
-        <div class="row flex-column align-items-center justify-content-start h-100 gap-3">
+        <h1>
+            CHI SIAMO
+        </h1>
+        <div class="row flex-column align-items-center justify-content-start h-100 gap-3 text-white">
             <div class="col-12 d-flex justify-content-center align-items-center gap-5">
                 <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
                 <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
@@ -306,9 +309,9 @@ export default {
     width: 100%;
     height: 100vh;
     position: relative;
+    color: var(--strong-color);
 
     .mine_title {
-        color: #333;
         text-align: center;
         margin-bottom: -15%;
         white-space: nowrap;
@@ -317,7 +320,6 @@ export default {
 
     span {
         font-size: 85px;
-        color: #333;
         text-align: center;
     }
 
@@ -491,6 +493,7 @@ export default {
     .city_icon {
         padding: 0.8em;
         border-radius: 0;
+        width: 90%;
     }
 
     .brindisi {
@@ -528,5 +531,13 @@ export default {
     justify-content: center;
     align-items: center;
     z-index: 999;
+}
+
+.btn_next {
+    color: var(--warning-color);
+}
+
+.mine_bg_tertiary {
+    background: var(--tertiary-color);
 }
 </style>
