@@ -15,8 +15,8 @@ export default {
             currentPerson: 0,
             people: [
                 { name: 'Nicoletta', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.jpg' },
-                { name: 'Bob', description: 'Responsabile Brindisi', image: 'smile.jpg' },
-                { name: 'Dodo', description: 'Ciao a tutti! Sono DODO, un cane vivace e giocoso. <br> Mi piace molto aiutare le persone a trovare la casa dei loro sogni. Sono un esperto nel trovare le case perfette per ogni tipo di famiglia, dal single al nucleo famigliare più numeroso.', image: 'smile.jpg' },
+                { name: 'Bob', description: 'Responsabile Brindisi', image: 'smile2.jpg' },
+                { name: 'Dodo', description: 'Ciao a tutti! Sono DODO, un cane vivace e giocoso. <br> Mi piace molto aiutare le persone a trovare la casa dei loro sogni. Sono un esperto nel trovare le case perfette per ogni tipo di famiglia, dal single al nucleo famigliare più numeroso.', image: 'logo_bianco.png' },
             ],
         }
     },
@@ -153,14 +153,15 @@ export default {
                         <div class="person-image" :style="{ backgroundImage: `url(${person.image})` }"></div>
                         <div class="person-info">
                             <h3>{{ person.name }}</h3>
-                            <p>{{ person.description }}</p>
+                            <p v-html="person.description"></p>
                         </div>
                     </div>
                 </div>
 
-                <div v-for="(person, index) in people" :key="'inactive-' + index" v-if="isInactive(index)"
+                <div v-for="(person, index) in people" :key="'inactive-' + index" v-show="isInactive(index)"
                     :class="['inactive-image', { 'left': isLeft(index), 'right': isRight(index) }]"
-                    :style="{ backgroundImage: `url(${person.image})` }"></div>
+                    :style="{ backgroundImage: `url(${person.image})` }">
+                </div>
             </div>
 
             <button @click="nextPerson" class="nav-arrow right-arrow">❯</button>
@@ -590,7 +591,6 @@ export default {
     margin: 0 auto;
     overflow: hidden;
     color: var(--light-color);
-    /* border: 1px solid red; */
 }
 
 .carousel-container {
@@ -602,7 +602,6 @@ export default {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-    /* border: 1px solid blue; */
 }
 
 .carousel-item {
@@ -612,7 +611,6 @@ export default {
     width: 70%;
     text-align: center;
     margin: 0;
-    /* border: 1px dashed green; */
 }
 
 .carousel-item.active {
@@ -643,7 +641,6 @@ export default {
     background-position: center;
     position: absolute;
     top: -78px;
-    /* left: calc(50% - 40px); */
     left: 50%;
     transform: translateX(-50%);
     border: 3px solid white;
@@ -666,11 +663,13 @@ export default {
 
 .inactive-image.left {
     left: 15%;
+    top: 0%;
     transform: translateX(-50%);
 }
 
 .inactive-image.right {
     right: 15%;
+    top: 0%;
     transform: translateX(50%);
 }
 

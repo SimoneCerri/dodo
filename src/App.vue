@@ -23,9 +23,4 @@ export default {
   <Footer></Footer>
 </template>
 
-<style scoped>
-#app {
-  /* width: 100vw;
-  overflow: hidden; */
-}
-</style>
+<style scoped></style>
