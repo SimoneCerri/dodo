@@ -14,7 +14,7 @@ export default {
             showBackToTop: false,
             currentPerson: 0,
             people: [
-                { name: 'Nicoletta', description: 'Responsabile Torino', image: 'smile.jpg' },
+                { name: 'Nicoletta', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.jpg' },
                 { name: 'Bob', description: 'Responsabile Brindisi', image: 'smile.jpg' },
                 { name: 'Dodo', description: 'Ciao a tutti! Sono DODO, un cane vivace e giocoso. <br> Mi piace molto aiutare le persone a trovare la casa dei loro sogni. Sono un esperto nel trovare le case perfette per ogni tipo di famiglia, dal single al nucleo famigliare più numeroso.', image: 'smile.jpg' },
             ],
@@ -39,6 +39,18 @@ export default {
         },
         prevPerson() {
             this.currentPerson = (this.currentPerson - 1 + this.people.length) % this.people.length;
+        },
+        isInactive(index) {
+            return (
+                index === (this.currentPerson - 1 + this.people.length) % this.people.length ||
+                index === (this.currentPerson + 1) % this.people.length
+            );
+        },
+        isLeft(index) {
+            return (index === (this.currentPerson - 1 + this.people.length) % this.people.length);
+        },
+        isRight(index) {
+            return (index === (this.currentPerson + 1) % this.people.length);
         },
     },
     mounted() {
@@ -136,9 +148,8 @@ export default {
 
             <div class="carousel-container">
                 <div v-for="(person, index) in people" :key="index"
-                    :class="['carousel-item', { active: currentPerson === index, prev: currentPerson === (index - 1 + people.length) % people.length, next: currentPerson === (index + 1) % people.length }]">
-
-                    <div class="person-card">
+                    :class="['carousel-item', { active: currentPerson === index }]">
+                    <div v-if="currentPerson === index" class="person-card">
                         <div class="person-image" :style="{ backgroundImage: `url(${person.image})` }"></div>
                         <div class="person-info">
                             <h3>{{ person.name }}</h3>
@@ -146,6 +157,10 @@ export default {
                         </div>
                     </div>
                 </div>
+
+                <div v-for="(person, index) in people" :key="'inactive-' + index" v-if="isInactive(index)"
+                    :class="['inactive-image', { 'left': isLeft(index), 'right': isRight(index) }]"
+                    :style="{ backgroundImage: `url(${person.image})` }"></div>
             </div>
 
             <button @click="nextPerson" class="nav-arrow right-arrow">❯</button>
@@ -451,6 +466,19 @@ export default {
     a {
         pointer-events: auto !important;
     }
+
+    .btn_next {
+        position: absolute;
+        bottom: -2%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        padding-bottom: 1.5em;
+    }
 }
 
 #mission {
@@ -566,7 +594,7 @@ export default {
 }
 
 .carousel-container {
-    margin-top: 8em;
+    margin-top: 6em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -620,6 +648,30 @@ export default {
     transform: translateX(-50%);
     border: 3px solid white;
     z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.inactive-image {
+    position: absolute;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px) grayscale(50%);
+    transition: all 0.5s ease;
+    z-index: 900;
+}
+
+.inactive-image.left {
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+.inactive-image.right {
+    right: 15%;
+    transform: translateX(50%);
 }
 
 .person-info h3 {
@@ -641,18 +693,18 @@ export default {
     padding: 0 !important;
     width: 10px !important;
     position: absolute;
-    top: 22%;
+    top: 16%;
     transform: translateY(-50%);
     cursor: pointer;
 }
 
 .left-arrow {
-    left: 15%;
+    left: 23%;
     z-index: 1100;
 }
 
 .right-arrow {
-    right: 15%;
+    right: 23%;
     z-index: 1100;
 }
 </style>
