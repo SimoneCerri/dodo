@@ -73,9 +73,11 @@ export default {
             class="row bg-warning rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center px-5">
 
             <div id="services_title" class="col d-flex justify-content-center align-items-center">
-                I NOSTRI
-                <br>
-                SERVIZI
+                <h1>
+                    I NOSTRI
+                    <br>
+                    SERVIZI
+                </h1>
             </div>
             <div class="col">
                 DODO offre soluzione create su misura da un team di professionisti per accompagnare, informando, il
@@ -188,24 +190,26 @@ export default {
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
                 <div class="col-10 p-3 bg-warning rounded-4">
                     <div class="row" style="color: var(--strong-color);">
-                        <div class="col-4 d-flex justify-content-center align-items-center">
-                            <font-awesome-icon icon="circle-chevron-down" />
+                        <div class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="../assets/img/icon_torino.png" alt="" class="city_icon">
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                             <div class="row flex-column gap-3">
                                 <div class="col-6 fw-bold">
-                                    TORINO
+                                    <h1>
+                                        TORINO
+                                    </h1>
                                 </div>
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
                                         <div class="col-4">
-                                            Via le dita
+                                            Via le dita dal naso 15
                                         </div>
                                         <div class="col-4">
-                                            Telefono
+                                            33323131241
                                         </div>
                                         <div class="col-4">
-                                            E-mail
+                                            dodo.torino@gmail.com
                                         </div>
                                     </div>
                                 </div>
@@ -215,24 +219,26 @@ export default {
                 </div>
                 <div class="col-10 p-3 bg-success rounded-4">
                     <div class="row" style="color: var(--light-color);">
-                        <div class="col-4 d-flex justify-content-center align-items-center">
-                            <font-awesome-icon icon="circle-chevron-down" />
+                        <div class="col-5 d-flex justify-content-center align-items-center">
+                            <img src="../assets/img/icon_brindisi.png" alt="" class="city_icon brindisi">
                         </div>
-                        <div class="col-8">
+                        <div class="col-7">
                             <div class="row flex-column gap-3">
                                 <div class="col-6 fw-bold">
-                                    TORINO
+                                    <h1>
+                                        BRINDISI
+                                    </h1>
                                 </div>
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
                                         <div class="col-4">
-                                            Via le dita
+                                            Via le dita dal naso 22
                                         </div>
                                         <div class="col-4">
-                                            Telefono
+                                            33323131241
                                         </div>
                                         <div class="col-4">
-                                            E-mail
+                                            dodo.brindisi@gmail.com
                                         </div>
                                     </div>
                                 </div>
@@ -282,7 +288,7 @@ export default {
         </div>
     </section>
     <a href="#" class="btn_up btn" v-show="showBackToTop" @click="scrollToTop">
-        <div class="next_session_img">
+        <div class="back_to_top">
             <img src="/src/assets/img/logo_marrone.png" alt="">
         </div>
     </a>
@@ -477,6 +483,16 @@ export default {
     .mine_h {
         height: 100vh;
     }
+
+    .city_icon {
+        padding: 0.8em;
+        border-radius: 0;
+    }
+
+    .brindisi {
+        width: 120%;
+        height: 80%;
+    }
 }
 
 #follow_us {
@@ -489,12 +505,13 @@ export default {
 
 }
 
-.next_session_img {
+.back_to_top {
 
     img {
         height: 60px;
         width: 60px;
         border-radius: 40%;
+        opacity: 75%;
     }
 }
 

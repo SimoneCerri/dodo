@@ -24,9 +24,8 @@ export default {
 </template>
 
 <style scoped>
-/* #app {
-  z-index: -1;
-  pointer-events: none;
-  position: relative;
-} */
+#app {
+  /* width: 100vw;
+  overflow: hidden; */
+}
 </style>
