@@ -12,6 +12,12 @@ export default {
     data() {
         return {
             showBackToTop: false,
+            currentPerson: 0,
+            people: [
+                { name: 'Nicoletta', description: 'Responsabile Torino', image: 'smile.jpg' },
+                { name: 'Bob', description: 'Responsabile Brindisi', image: 'smile.jpg' },
+                { name: 'Dodo', description: 'Ciao a tutti! Sono DODO, un cane vivace e giocoso. <br> Mi piace molto aiutare le persone a trovare la casa dei loro sogni. Sono un esperto nel trovare le case perfette per ogni tipo di famiglia, dal single al nucleo famigliare più numeroso.', image: 'smile.jpg' },
+            ],
         }
     },
     methods: {
@@ -27,6 +33,12 @@ export default {
         },
         scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
+        nextPerson() {
+            this.currentPerson = (this.currentPerson + 1) % this.people.length;
+        },
+        prevPerson() {
+            this.currentPerson = (this.currentPerson - 1 + this.people.length) % this.people.length;
         },
     },
     mounted() {
@@ -119,27 +131,24 @@ export default {
         <h1>
             CHI SIAMO
         </h1>
-        <div class="row flex-column align-items-center justify-content-start h-100 gap-3 text-white">
-            <div class="col-12 d-flex justify-content-center align-items-center gap-5">
-                <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
-                <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
-                <img src="https://picsum.photos/300" alt="" class="" style="border-radius: 50%; width:8em;">
-            </div>
-            <div
-                class="col-8 d-flex flex-column justify-content-center align-items-center gap-5 bg-success about_us_card">
-                <div class="col-10 d-flex justify-content-center align-items-center">
-                    <h2 class="text-center">
-                        Nome Cognome
-                    </h2>
-                </div>
-                <div class="col-10 d-flex justify-content-center align-items-center">
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, incidunt earum saepe natus
-                        quod fugit consequatur perspiciatis? Hic unde commodi, deserunt nam reiciendis dolorum ducimus
-                        animi repellendus natus incidunt dolor.
-                    </p>
+        <div id="about-us-carousel" class="carousel">
+            <button @click="prevPerson" class="nav-arrow left-arrow">❮</button>
+
+            <div class="carousel-container">
+                <div v-for="(person, index) in people" :key="index"
+                    :class="['carousel-item', { active: currentPerson === index, prev: currentPerson === (index - 1 + people.length) % people.length, next: currentPerson === (index + 1) % people.length }]">
+
+                    <div class="person-card">
+                        <div class="person-image" :style="{ backgroundImage: `url(${person.image})` }"></div>
+                        <div class="person-info">
+                            <h3>{{ person.name }}</h3>
+                            <p>{{ person.description }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <button @click="nextPerson" class="nav-arrow right-arrow">❯</button>
         </div>
         <a href="#mission" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
@@ -539,5 +548,111 @@ export default {
 
 .mine_bg_tertiary {
     background: var(--tertiary-color);
+}
+
+/* css carosello prov */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: var(--light-color);
+    /* border: 1px solid red; */
+}
+
+.carousel-container {
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    /* border: 1px solid blue; */
+}
+
+.carousel-item {
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+    width: 70%;
+    text-align: center;
+    margin: 0;
+    /* border: 1px dashed green; */
+}
+
+.carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.person-card {
+    background: var(--warning-color);
+    border-radius: 3em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-top: 3em;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.person-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -78px;
+    /* left: calc(50% - 40px); */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    z-index: 1000;
+}
+
+.person-info h3 {
+    margin: 40px 0 10px;
+    font-size: 1.2em;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 1.7em;
+    cursor: pointer;
+    color: var(--tertiary-color) !important;
+}
+
+.left-arrow,
+.right-arrow {
+    background: none !important;
+    padding: 0 !important;
+    width: 10px !important;
+    position: absolute;
+    top: 22%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 15%;
+    z-index: 1100;
+}
+
+.right-arrow {
+    right: 15%;
+    z-index: 1100;
 }
 </style>
