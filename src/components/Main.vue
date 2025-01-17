@@ -188,17 +188,17 @@ export default {
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
-                <div class="col-10 p-3 bg-warning rounded-4">
+                <div class="col-11 p-3 bg-warning rounded-5">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img src="../assets/img/icon_torino.png" alt="" class="city_icon">
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 p-0">
                             <div class="row flex-column gap-3">
                                 <div class="col-6 fw-bold">
-                                    <h1>
+                                    <h2>
                                         TORINO
-                                    </h1>
+                                    </h2>
                                 </div>
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
@@ -217,17 +217,17 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-10 p-3 bg-success rounded-4">
+                <div class="col-11 p-3 bg-success rounded-5">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img src="../assets/img/icon_brindisi.png" alt="" class="city_icon brindisi">
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 p-0">
                             <div class="row flex-column gap-3">
                                 <div class="col-6 fw-bold">
-                                    <h1>
+                                    <h2>
                                         BRINDISI
-                                    </h1>
+                                    </h2>
                                 </div>
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
@@ -248,44 +248,44 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
-    <section id="follow_us">
-        <div class="container h-100 pt-5">
-            <div class="row justify-content-evenly align-items-center gap-5">
-                <div class="col-4 me-5">
-                    <img src="../assets/img/door2door_marrone.png" alt="">
-                </div>
-                <div class="col-4">
-                    <div class="row flex-column">
-                        <div class="col-4 fw-bold fs-3" style="color: var(--strong-color);">
-                            SEGUICI!
-                        </div>
-                        <div class="col-4 ms-2">
-                            <div class="row flex-nowrap">
-                                <div class="col-12 p-0">
-                                    <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
-                                        <div class="social_icon">
-                                            <!-- <font-awesome-icon icon="facebook" style="font-size: 2em; color: var(--strong-color);" /> -->
-                                            <font-awesome-icon icon="circle-chevron-down"
-                                                style="font-size: 2em; color: var(--strong-color);" />
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 p-0">
-                                    <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
-                                        <div class="social_icon">
-                                            <!-- <font-awesome-icon icon="instagram" style="font-size: 2em; color: var(--strong-color);" /> -->
-                                            <font-awesome-icon icon="circle-chevron-down"
-                                                style="font-size: 2em; color: var(--strong-color);" />
-                                        </div>
-                                    </a>
+        <section id="follow_us">
+            <div class="container h-100 pt-5">
+                <div class="row justify-content-evenly align-items-center gap-5">
+                    <div class="col-4 me-5">
+                        <img src="../assets/img/door2door_marrone.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <div class="row flex-column">
+                            <div class="col-4 fw-bold fs-3" style="color: var(--strong-color);">
+                                SEGUICI!
+                            </div>
+                            <div class="col-4 ms-2">
+                                <div class="row flex-nowrap">
+                                    <div class="col-12 p-0">
+                                        <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+                                            <div class="social_icon">
+                                                <!-- <font-awesome-icon icon="facebook" style="font-size: 2em; color: var(--strong-color);" /> -->
+                                                <font-awesome-icon icon="circle-chevron-down"
+                                                    style="font-size: 2em; color: var(--strong-color);" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 p-0">
+                                        <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+                                            <div class="social_icon">
+                                                <!-- <font-awesome-icon icon="instagram" style="font-size: 2em; color: var(--strong-color);" /> -->
+                                                <font-awesome-icon icon="circle-chevron-down"
+                                                    style="font-size: 2em; color: var(--strong-color);" />
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <a href="#" class="btn_up btn" v-show="showBackToTop" @click="scrollToTop">
         <div class="back_to_top">
@@ -480,6 +480,10 @@ export default {
 
 #contacts {
 
+    .col-11 {
+        height: 180px;
+    }
+
     .mine_h {
         height: 100vh;
     }
@@ -498,6 +502,7 @@ export default {
 #follow_us {
     background-color: var(--tertiary-color);
     height: 12em;
+    /* margin-top: -12em; */
 
     img {
         width: 200px;

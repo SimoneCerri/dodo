@@ -28,7 +28,7 @@ export default {
                     <div class="col-4">
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-flex justify-content-center align-items-center">
                         <Logo class="mine_logo"></Logo>
                     </div>
                     <div class="col-4 ps-5">

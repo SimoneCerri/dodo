@@ -18,62 +18,29 @@ export default {
 </script>
 
 <template>
-    <!-- <div class="bg-warning row rounded-top-0 rounded-4 pt-4 pb-3 px-5 text-center">
-        <div class="col-3">
-            <a class="text-decoration-none text-dark" href="#Home">
-                Home
-            </a>
-        </div>
-        <div class="col-3 ps-2">
-            <a class="text-decoration-none text-dark text-nowrap" href="#Home">
-                Chi siamo
-            </a>
-        </div>
-        <div class="col-3">
-            <a class="text-decoration-none text-dark" href="#Home">
-                Servizi
-            </a>
-        </div>
-        <div class="col-3">
-            <a class="text-decoration-none text-dark" href="#Home">
-                Contatti
-            </a>
-        </div>
-    </div> -->
-
     <nav class="navbar navbar-expand-lg rounded-bottom-4">
         <div class="container-fluid">
-            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler collapsed px-4" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#call_to_action">
-                            Home
-                        </a>
+                        <a class="nav-link active" aria-current="page" href="#call_to_action">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">
-                            Servizi
-                        </a>
+                        <a class="nav-link" href="#services">Servizi</a>
                     </li>
                     <li class="nav-item text-nowrap">
-                        <a class="nav-link" href="#about_us">
-                            Chi siamo
-                        </a>
+                        <a class="nav-link" href="#about_us">Chi siamo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mission">
-                            Mission
-                        </a>
+                        <a class="nav-link" href="#mission">Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts">
-                            Contacts
-                        </a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -81,4 +48,95 @@ export default {
     </nav>
 </template>
 
-<style></style>
+<style scoped>
+.navbar-toggler {
+    background-color: var(--warning-color);
+    border-radius: 15px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    padding: 1em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after,
+.navbar-toggler span {
+    content: '';
+    display: block;
+    background-color: white;
+    height: 5px;
+    width: 25px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler::before {
+    top: 12px;
+}
+
+.navbar-toggler::after {
+    top: 34px;
+}
+
+.navbar-toggler span {
+    top: 23px;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-color);
+    border-top: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1040;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+.navbar-collapse.show {
+    transform: scaleY(1);
+}
+
+.navbar-nav {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: var(--strong-color) !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--warning-color);
+    color: var(--light-color);
+}
+
+.navbar-collapse .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+</style>
