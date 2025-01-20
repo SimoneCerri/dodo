@@ -68,13 +68,13 @@ export default {
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="col-8 d-flex justify-content-center">
                     <h1 class="mine_title">
-                        E' TUTTO PIU'
+                        È TUTTO PIÙ
                         <br>
                         FACILE CON
                     </h1>
                 </div>
                 <div class="col-8 d-flex justify-content-center">
-                    <span class="text-center">
+                    <span class="text-center mine_font">
                         DODO
                     </span>
                 </div>
@@ -104,11 +104,12 @@ export default {
                 </h1>
             </div>
             <div class="col">
-                DODO offre soluzione create su misura da un team di professionisti per accompagnare, informando, il
-                cliente in un percorso di scelta libera.
+                DODO offre <strong>soluzione create su misura da un team di professionisti</strong> per accompagnare,
+                informando, il
+                cliente in un <strong>percorso di scelta libera.</strong>
             </div>
             <div class="col d-flex justify-content-center align-items-center">
-                Ecco alcuni dei nostri servizi:
+                <strong>Ecco alcuni dei nostri servizi:</strong>
             </div>
             <div class="col d-flex flex-column justify-content-center align-items-center">
                 <div class="mine_btn_brown">
@@ -434,6 +435,12 @@ export default {
             width: 700px;
             overflow: hidden;
         }
+    }
+
+    .mine_font {
+        font-family: 'Rock Salt', cursive !important;
+        /* font-family: 'Patrick Hand', cursive !important; */
+        /* font-family: 'Gloria Hallelujah', cursive !important; */
     }
 }
 
