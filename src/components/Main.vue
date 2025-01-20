@@ -301,8 +301,7 @@ export default {
                                     <div class="col-12 p-0">
                                         <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
-                                                <!-- <font-awesome-icon icon="facebook" style="font-size: 2em; color: var(--strong-color);" /> -->
-                                                <font-awesome-icon icon="circle-chevron-down"
+                                                <font-awesome-icon :icon="['fab', 'facebook']"
                                                     style="font-size: 2em; color: var(--strong-color);" />
                                             </div>
                                         </a>
@@ -310,8 +309,7 @@ export default {
                                     <div class="col-12 p-0">
                                         <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
-                                                <!-- <font-awesome-icon icon="instagram" style="font-size: 2em; color: var(--strong-color);" /> -->
-                                                <font-awesome-icon icon="circle-chevron-down"
+                                                <font-awesome-icon :icon="['fab', 'instagram']"
                                                     style="font-size: 2em; color: var(--strong-color);" />
                                             </div>
                                         </a>
@@ -695,6 +693,10 @@ export default {
     .brindisi {
         width: 120%;
         height: 80%;
+    }
+
+    h2 {
+        font-weight: 700;
     }
 }
 
