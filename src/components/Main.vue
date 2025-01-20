@@ -494,16 +494,12 @@ export default {
 
     .btn_next {
         position: absolute;
-        bottom: -2%;
+        bottom: -3%;
         height: 12vh;
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--warning-color);
-    }
-
-    h1 {
-        padding-bottom: 1.5em;
     }
 
     .carousel {
@@ -513,7 +509,6 @@ export default {
         position: relative;
         width: 100%;
         height: 800px;
-        /* 600 */
         max-width: 800px;
         margin: 0 auto;
         overflow: hidden;
@@ -521,7 +516,7 @@ export default {
     }
 
     .carousel-container {
-        margin-top: 6em;
+        margin-top: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -558,7 +553,7 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 500px;
+        height: 600px;
     }
 
     .person-image {
