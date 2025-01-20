@@ -14,9 +14,9 @@ export default {
             showBackToTop: false,
             currentPerson: 0,
             people: [
-                { name: 'Nicoletta', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.jpg' },
-                { name: 'Bob', description: 'Responsabile Brindisi', image: 'smile2.jpg' },
-                { name: 'Dodo', description: 'Ciao a tutti! Sono DODO, un cane vivace e giocoso. <br> Mi piace molto aiutare le persone a trovare la casa dei loro sogni. Sono un esperto nel trovare le case perfette per ogni tipo di famiglia, dal single al nucleo famigliare più numeroso.', image: 'logo_bianco.png' },
+                { name: 'NICOLETTA', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.jpg' },
+                { name: 'BOB', description: 'Responsabile Brindisi', image: 'smile2.jpg' },
+                { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli</strong>', image: 'logo_bianco.png' },
             ],
         }
     },
@@ -94,7 +94,7 @@ export default {
     </section>
     <section id="services" class="pt-5 mine_bg_secondary">
         <div
-            class="row mine_bg_tertiary rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center px-5">
+            class="row mine_bg_tertiary rounded-5 flex-column align-items-center justify-content-evenly h-100 mb-5 mine_w text-center gap-3 p-5">
 
             <div id="services_title" class="col d-flex justify-content-center align-items-center">
                 <h1>
@@ -185,16 +185,24 @@ export default {
             </div>
             <div class="col-10 d-flex flex-column justify-content-center align-items-center">
                 <div class="text-center">
-                    L'obbiettivo è avere un DODO in ogni famiglia che accompagna e guida verso la migliore soluzione
-                    tailor made sul mercato. Permette quindi alla famiglia di avere più tempo per se, meno pensieri e
-                    risultati garantiti.
+                    L'obbiettivo è <strong>avere un DODO in ogni famiglia</strong> che accompagna e guida verso la
+                    migliore soluzione
+                    <strong>tailor made</strong> sul mercato. Permette quindi alla famiglia di avere <strong>più tempo
+                        per se,
+                        meno
+                        pensieri e
+                        risultati garantiti.</strong>
                 </div>
             </div>
             <div class="col-10 d-flex flex-column justify-content-center align-items-center">
                 <div class="text-center">
-                    La consulenza di DODO si propone di avere come punto focale un consulente formato per ascoltare ed
-                    empatizzare, al fine di comprendere chiaramente le esigenze dell'interlocutore e offrirgli il
-                    miglior servizio personalizzato possibile, tenendo conto esclusivamente delle sue necessità.
+                    La consulenza di DODO si propone di avere come punto focale un consulente <strong>formato per
+                        ascoltare ed
+                        empatizzare,</strong> al fine di comprendere chiaramente le esigenze dell'interlocutore e
+                    offrirgli il
+                    miglior <strong>servizio personalizzato possibile,</strong> tenendo conto esclusivamente
+                    delle sue
+                    necessità.
                 </div>
             </div>
         </div>
@@ -336,6 +344,11 @@ export default {
     position: relative;
     color: var(--strong-color);
 
+    h1 {
+        font-weight: bold;
+        font-size: 3em;
+    }
+
     .mine_title {
         text-align: center;
         margin-bottom: -15%;
@@ -408,6 +421,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--warning-color);
     }
 
     .mine_runner {
@@ -446,6 +460,16 @@ export default {
         font-weight: bold;
     }
 
+    .btn_next {
+        position: absolute;
+        bottom: -3%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--warning-color);
+    }
+
 }
 
 #about_us {
@@ -475,15 +499,146 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--warning-color);
     }
 
     h1 {
         padding-bottom: 1.5em;
     }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 800px;
+        /* 600 */
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        color: var(--light-color);
+    }
+
+    .carousel-container {
+        margin-top: 6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+        opacity: 0.5;
+        transform: scale(0.8);
+        transition: opacity 0.5s, transform 0.5s;
+        width: 70%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .carousel-item.active {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .person-card {
+        background: var(--warning-color);
+        border-radius: 3em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 3em;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .person-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: -78px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 3px solid white;
+        z-index: 1000;
+        transition: all 0.5s ease;
+    }
+
+    .inactive-image {
+        position: absolute;
+        top: 30%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px) grayscale(50%);
+        transition: all 0.5s ease;
+        z-index: 900;
+    }
+
+    .inactive-image.left {
+        left: 15%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+
+    .inactive-image.right {
+        right: 15%;
+        top: 0%;
+        transform: translateX(50%);
+    }
+
+    .person-info h3 {
+        margin: 40px 0 10px;
+        font-size: 1.2em;
+    }
+
+    .nav-arrow {
+        background: none;
+        border: none;
+        font-size: 1.7em;
+        cursor: pointer;
+        color: var(--tertiary-color) !important;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        background: none !important;
+        padding: 0 !important;
+        width: 10px !important;
+        position: absolute;
+        top: 16%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .left-arrow {
+        left: 23%;
+        z-index: 1100;
+    }
+
+    .right-arrow {
+        right: 23%;
+        z-index: 1100;
+    }
 }
 
 #mission {
     background-color: var(--secondary-color);
+    margin-bottom: 4em;
 
     .btn_next {
         position: absolute;
@@ -492,6 +647,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--warning-color);
     }
 
     .mine_mission_img {
@@ -572,138 +728,10 @@ export default {
 }
 
 .btn_next {
-    color: var(--warning-color);
+    color: var(--warning-color) !important;
 }
 
 .mine_bg_tertiary {
     background: var(--tertiary-color);
-}
-
-/* css carosello prov */
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 600px;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    color: var(--light-color);
-}
-
-.carousel-container {
-    margin-top: 6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    opacity: 0.5;
-    transform: scale(0.8);
-    transition: opacity 0.5s, transform 0.5s;
-    width: 70%;
-    text-align: center;
-    margin: 0;
-}
-
-.carousel-item.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.person-card {
-    background: var(--warning-color);
-    border-radius: 3em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    padding-top: 3em;
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-}
-
-.person-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: -78px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 3px solid white;
-    z-index: 1000;
-    transition: all 0.5s ease;
-}
-
-.inactive-image {
-    position: absolute;
-    top: 30%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px) grayscale(50%);
-    transition: all 0.5s ease;
-    z-index: 900;
-}
-
-.inactive-image.left {
-    left: 15%;
-    top: 0%;
-    transform: translateX(-50%);
-}
-
-.inactive-image.right {
-    right: 15%;
-    top: 0%;
-    transform: translateX(50%);
-}
-
-.person-info h3 {
-    margin: 40px 0 10px;
-    font-size: 1.2em;
-}
-
-.nav-arrow {
-    background: none;
-    border: none;
-    font-size: 1.7em;
-    cursor: pointer;
-    color: var(--tertiary-color) !important;
-}
-
-.left-arrow,
-.right-arrow {
-    background: none !important;
-    padding: 0 !important;
-    width: 10px !important;
-    position: absolute;
-    top: 16%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.left-arrow {
-    left: 23%;
-    z-index: 1100;
-}
-
-.right-arrow {
-    right: 23%;
-    z-index: 1100;
 }
 </style>
