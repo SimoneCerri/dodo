@@ -428,10 +428,11 @@ export default {
         bottom: -30%;
         left: 15%;
         overflow: hidden;
+        max-width: 100%;
+        clip-path: inset(0 59px 0 0);
 
         img {
             width: 700px;
-            overflow: hidden;
         }
     }
 
@@ -724,7 +725,7 @@ export default {
 .btn_up {
     position: fixed;
     bottom: 20%;
-    right: 18%;
+    right: 6%;
     display: flex;
     justify-content: center;
     align-items: center;

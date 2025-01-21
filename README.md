@@ -53,6 +53,14 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 
 <!--
 #### TO DO ####
+- Menu background rotto
+- Font scritta DODO
+- VW da fixare colpa img
+- Info da Nicoletta per riempire
+- Layout pad
+- Layout desktop
+- CEO
+- Deploy
 - Readme [ ]
     - Docs Links [X]
     - Team Links [X]

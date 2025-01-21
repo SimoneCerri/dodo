@@ -37,10 +37,10 @@ export default {
                         <a class="nav-link" href="#about_us">Chi siamo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mission">Mission</a>
+                        <a class="nav-link" href="#mission">Missione</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contacts</a>
+                        <a class="nav-link" href="#contacts">Contatti</a>
                     </li>
                 </ul>
             </div>
@@ -96,8 +96,8 @@ export default {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--light-color);
-    border-top: 1px solid #ccc;
+    /* background-color: var(--light-color); */
+    /* border-top: 1px solid #ccc; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1040;
     transform: scaleY(0);
@@ -114,6 +114,11 @@ export default {
     padding: 0;
     margin: 0;
     gap: 10px;
+    text-align: center;
+}
+
+.nav-item {
+    text-align: left;
 }
 
 .nav-link {
@@ -123,15 +128,14 @@ export default {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: var(--light-color);
-    display: block;
-    width: 100%;
+    display: inline-block;
     box-sizing: border-box;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .nav-link:hover {
     background-color: var(--warning-color);
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 
 .navbar-collapse .navbar-nav {
