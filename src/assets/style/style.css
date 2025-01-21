@@ -55,33 +55,72 @@ body {
 
 /* #region MediaQuery */
 
-/* #region Desktops & Large screens */
-@media screen and (max-width: 1200px) {
-  /* Desktops & Large screens */
-}
-
-/* #endregion Desktops & Large screens */
-
-/* #region Small screens & Laptops */
-@media screen and (max-width: 1024px) {
-  /* Small screens & Laptops */
-}
-
-/* #endregion Small screens & Laptops */
-
-/* #region iPads & Tablets */
-@media screen and (max-width: 768px) {
-  /* iPads & Tablets */
-}
-
-/* #endregion iPads & Tablets */
-
 /* #region Mobile */
-@media screen and (max-width: 480px) {
-  /* Mobile */
+@media (max-width: 480px) {
+  /* Layout per smartphone */
+  /* 390px x 844px (es. iPhone 12 Mini). */
 }
 
 /* #endregion Mobile */
+
+/* #region Tablet */
+@media (min-width: 481px) and (max-width: 900px) {
+  /* Layout per tablet */
+  /* 834px x 1112px (es. iPad Air). */
+
+  header {
+
+    img {
+      width: 100px !important;
+    }
+  }
+
+  .navbar-toggler {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .navbar-collapse {
+    left: 36% !important;
+  }
+
+  .navbar-toggler::before,
+  .navbar-toggler::after,
+  .navbar-toggler span {
+    height: 10px !important;
+    width: 50px !important;
+  }
+
+  .navbar-toggler::before {
+    top: 18px !important;
+  }
+
+  .navbar-toggler::after {
+    top: 74px !important;
+  }
+
+  .navbar-toggler span {
+    top: 46px !important;
+  }
+}
+
+/* #endregion Tablet */
+
+/* #region Laptop e desktop piccoli */
+@media (min-width: 901px) and (max-width: 1440px) {
+  /* Layout per laptop e piccoli desktop */
+  /* 1440px x 900px (es. MacBook Air e dispositivi simili). */
+}
+
+/* #endregion Laptop e desktop piccoli */
+
+/* #region Desktop grandi */
+@media (min-width: 1441px) {
+  /* Layout per desktop grandi */
+  /* 1920px x 1080px (Full HD, monitor standard più diffusi). */
+}
+
+/* #endregion Desktop grandi */
 
 /* #endregion MediaQuery */
 

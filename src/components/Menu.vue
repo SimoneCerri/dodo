@@ -19,7 +19,7 @@ export default {
 
 <template>
     <nav class="navbar navbar-expand-lg rounded-bottom-4">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
             <button class="navbar-toggler collapsed px-4" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -96,9 +96,6 @@ export default {
     top: 100%;
     left: 0;
     width: 100%;
-    /* background-color: var(--light-color); */
-    /* border-top: 1px solid #ccc; */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1040;
     transform: scaleY(0);
     transform-origin: top;
@@ -131,6 +128,7 @@ export default {
     display: inline-block;
     box-sizing: border-box;
     transition: background-color 0.2s ease, color 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link:hover {

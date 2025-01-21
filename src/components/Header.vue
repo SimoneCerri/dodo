@@ -23,15 +23,15 @@ export default {
 <template>
     <header>
         <div id="header" class="d-flex align-items-center justify-content-evenly">
-            <div class="containter">
+            <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 d-md-none">
 
                     </div>
-                    <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="col-4 col-md-6 d-flex justify-content-center align-items-center">
                         <Logo class="mine_logo"></Logo>
                     </div>
-                    <div class="col-4 ps-5">
+                    <div class="col-4 col-md-6 ps-4">
                         <Menu class="menu"></Menu>
                     </div>
                 </div>
