@@ -136,6 +136,7 @@ export default {
     color: var(--light-color) !important;
 }
 
+
 .navbar-collapse .navbar-nav {
     list-style: none;
     margin: 0;

@@ -115,6 +115,7 @@ body {
 
     .btn_next {
       pointer-events: auto !important;
+      bottom: 12% !important;
     }
 
     .mine_banner {
@@ -190,6 +191,7 @@ body {
 
     .btn_next {
       z-index: 999 !important;
+      bottom: -2% !important;
     }
 
   }
@@ -220,6 +222,11 @@ body {
     .inactive-image {
       width: 200px !important;
       height: 200px !important;
+    }
+
+    .btn_next {
+      z-index: 999 !important;
+      bottom: -2% !important;
     }
   }
 
@@ -259,6 +266,11 @@ body {
         height: auto;
         z-index: 1;
       }
+    }
+
+    .btn_next {
+      z-index: 999 !important;
+      bottom: -2% !important;
     }
   }
 
