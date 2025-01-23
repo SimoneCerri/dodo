@@ -225,7 +225,7 @@ export default {
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
-                <div class="col-11 p-3 bg-warning rounded-5">
+                <div class="col-11 mine_bg_tertiary p-3 rounded-5">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img src="../assets/img/icon_torino.png" alt="" class="city_icon">
@@ -239,13 +239,13 @@ export default {
                                 </div>
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
-                                        <div class="col-4">
-                                            Via le dita dal naso 15
+                                        <div class="col-4 col-md-12">
+                                            Via della mole 15
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             33323131241
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             dodo.torino@gmail.com
                                         </div>
                                     </div>
@@ -254,7 +254,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-11 p-3 bg-success rounded-5">
+                <div class="col-11 mine_bg_warning p-3 rounded-5">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img src="../assets/img/icon_brindisi.png" alt="" class="city_icon brindisi">
@@ -268,13 +268,13 @@ export default {
                                 </div>
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
-                                        <div class="col-4">
-                                            Via le dita dal naso 22
+                                        <div class="col-4 col-md-12">
+                                            Via del brindisi 22
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             33323131241
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 col-md-12">
                                             dodo.brindisi@gmail.com
                                         </div>
                                     </div>
@@ -288,10 +288,10 @@ export default {
         <section id="follow_us">
             <div class="container h-100 pt-5">
                 <div class="row justify-content-evenly align-items-center gap-5">
-                    <div class="col-4 me-5">
+                    <div class="col-4 col-md-6 me-5">
                         <img src="../assets/img/door2door_marrone.png" alt="">
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 col-md-6">
                         <div class="row flex-column">
                             <div class="col-4 fw-bold fs-3" style="color: var(--strong-color);">
                                 SEGUICI!
@@ -738,5 +738,9 @@ export default {
 
 .mine_bg_tertiary {
     background: var(--tertiary-color);
+}
+
+.mine_bg_warning {
+    background: var(--warning-color);
 }
 </style>
