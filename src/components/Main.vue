@@ -66,14 +66,14 @@ export default {
     <section id="call_to_action" class="pt-5">
         <div class="row flex-column align-items-center justify-content-start h-100 mb-5">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                <div class="col-8 d-flex justify-content-center">
+                <div class="col-8 d-flex justify-content-center mine_banner_text">
                     <h1 class="mine_title">
                         È TUTTO PIÙ
                         <br>
                         FACILE CON
                     </h1>
                 </div>
-                <div class="col-8 d-flex justify-content-center">
+                <div class="col-8 d-flex justify-content-center mine_banner_text_dodo">
                     <span class="text-center mine_font">
                         DODO
                     </span>
@@ -99,7 +99,7 @@ export default {
             <div id="services_title" class="col d-flex justify-content-center align-items-center">
                 <h1>
                     I NOSTRI
-                    <br>
+                    <br class="d-md-none">
                     SERVIZI
                 </h1>
             </div>
