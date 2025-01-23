@@ -69,9 +69,11 @@ body {
   /* 834px x 1112px (es. iPad Air). */
 
   header {
+    z-index: 100 !important;
 
     img {
       width: 100px !important;
+      z-index: 999 !important;
     }
   }
 
@@ -104,9 +106,16 @@ body {
   }
 
   #call_to_action {
+    z-index: 1 !important;
+    pointer-events: none !important;
+
 
     padding-top: 0 !important;
     margin-top: -20% !important;
+
+    .btn_next {
+      pointer-events: auto !important;
+    }
 
     .mine_banner {
       height: 500px !important;
