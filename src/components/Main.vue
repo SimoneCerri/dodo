@@ -179,7 +179,7 @@ export default {
                 <div class="col-8 d-flex justify-content-center text-nowrap">
                     <h1>
                         LA NOSTRA
-                        <br>
+                        <br class="d-md-none">
                         MISSION
                     </h1>
                 </div>
