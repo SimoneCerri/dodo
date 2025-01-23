@@ -186,6 +186,35 @@ body {
     }
 
   }
+
+  #about_us {
+
+    .carousel {
+      height: 900px !important;
+    }
+
+    .carousel-container {
+      margin-top: 8em !important;
+    }
+
+    .person-card {
+      height: 750px !important;
+    }
+
+    .person-image {
+      width: 250px !important;
+      height: 250px !important;
+    }
+
+    .person-info {
+      font-size: 1.4em;
+    }
+
+    .inactive-image {
+      width: 200px !important;
+      height: 200px !important;
+    }
+  }
 }
 
 /* #endregion Tablet */
