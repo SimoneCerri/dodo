@@ -16,7 +16,7 @@ export default {
             people: [
                 { name: 'NICOLETTA', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.jpg' },
                 { name: 'BOB', description: 'Responsabile Brindisi', image: 'smile2.jpg' },
-                { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli</strong>', image: 'about_us_dodo.png' },
+                { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli.</strong>', image: 'about_us_dodo.png' },
             ],
         }
     },

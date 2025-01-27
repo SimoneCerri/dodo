@@ -516,6 +516,10 @@ body {
       width: 70% !important;
     }
 
+    .row .col:nth-child(1) {
+      font-size: 1.2em !important;
+    }
+
     .row .col:nth-child(2) {
       display: flex;
       flex-direction: column;
@@ -526,12 +530,12 @@ body {
     .row .col:nth-child(2),
     .row .col:nth-child(3),
     .row .col:nth-child(5) {
-      font-size: 1.2em !important;
+      font-size: 1.1em !important;
     }
 
     .row .col:nth-child(4),
     .row .col:nth-child(6) {
-      font-size: 1.2em !important;
+      font-size: 1.1em !important;
     }
 
     .mine_btn_brown {
@@ -547,6 +551,70 @@ body {
       bottom: 3% !important;
     }
 
+  }
+
+  #about_us {
+
+    h1 {
+      font-size: 4em !important;
+    }
+
+    .carousel {
+      height: 700px !important;
+      max-width: 1200px !important;
+    }
+
+    .carousel-container {
+      margin-top: 1em !important;
+    }
+
+    .person-card {
+      height: 550px !important;
+    }
+
+    .person-image {
+      width: 250px !important;
+      height: 250px !important;
+    }
+
+    .person-info {
+      font-size: 1.2em;
+
+      p {
+        margin: 0 !important;
+      }
+
+    }
+
+    .inactive-image {
+      width: 200px !important;
+      height: 200px !important;
+    }
+
+    .nav-arrow {
+      font-size: 2.3em !important;
+      color: var(--tertiary-color) !important;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      top: 18% !important;
+    }
+
+    .left-arrow {
+      left: 35% !important;
+      z-index: 1100;
+    }
+
+    .right-arrow {
+      right: 35% !important;
+      z-index: 1100;
+    }
+
+    .btn_next {
+      z-index: 999 !important;
+      bottom: 2% !important;
+    }
   }
 }
 
