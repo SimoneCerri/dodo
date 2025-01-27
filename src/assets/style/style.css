@@ -613,7 +613,56 @@ body {
 
     .btn_next {
       z-index: 999 !important;
-      bottom: 2% !important;
+      bottom: 3% !important;
+    }
+  }
+
+  #mission {
+
+    .row {
+      padding: 1.5em 0 !important;
+    }
+
+    .row:nth-child(1) {
+      justify-content: center !important;
+      margin-top: 1em;
+
+      .col-10 {
+        font-size: 1.2em !important;
+      }
+
+      .col-10:nth-child(1) {
+        font-size: 1.3em !important;
+      }
+    }
+
+    .row:nth-child(2) {
+      margin-top: 6em !important;
+      padding-top: 0 !important;
+    }
+
+    .mine_mission_img {
+      position: relative;
+
+      img {
+        height: 40% !important;
+        width: 50% !important;
+        object-fit: cover;
+        object-position: center !important;
+        border-radius: 40px !important;
+      }
+
+      .overlay-img {
+        height: 75% !important;
+        width: 40% !important;
+        bottom: 45% !important;
+        left: 10% !important;
+      }
+    }
+
+    .btn_next {
+      z-index: 999 !important;
+      bottom: 3% !important;
     }
   }
 }
