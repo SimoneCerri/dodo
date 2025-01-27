@@ -225,7 +225,7 @@ export default {
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
-                <div class="col-11 mine_bg_tertiary p-3 rounded-5">
+                <div class="col-11 col-lg-6 mine_bg_tertiary p-3 rounded-5">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img src="../assets/img/icon_torino.png" alt="" class="city_icon">
@@ -254,12 +254,12 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-11 mine_bg_warning p-3 rounded-5">
+                <div class="col-11 col-lg-6 mine_bg_warning p-3 rounded-5">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img src="../assets/img/icon_brindisi.png" alt="" class="city_icon brindisi">
                         </div>
-                        <div class="col-7 p-0">
+                        <div class="col-7 col_brindisi p-0">
                             <div class="row flex-column gap-3">
                                 <div class="col-6 fw-bold">
                                     <h2>
@@ -293,12 +293,12 @@ export default {
                     </div>
                     <div class="col-4 col-md-6">
                         <div class="row flex-column">
-                            <div class="col-4 fw-bold fs-3" style="color: var(--strong-color);">
+                            <div class="col-4 col-lg-12 fw-bold fs-3" style="color: var(--strong-color);">
                                 SEGUICI!
                             </div>
-                            <div class="col-4 ms-2">
-                                <div class="row flex-nowrap">
-                                    <div class="col-12 p-0">
+                            <div class="col-4 col-lg-12 ms-2 qui">
+                                <div class="row flex-nowrap qui">
+                                    <div class="col-12 col-lg-3 p-0">
                                         <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
                                                 <font-awesome-icon :icon="['fab', 'facebook']"
@@ -306,7 +306,7 @@ export default {
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-12 p-0">
+                                    <div class="col-12 col-lg-3 p-0">
                                         <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
                                                 <font-awesome-icon :icon="['fab', 'instagram']"
