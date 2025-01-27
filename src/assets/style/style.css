@@ -360,6 +360,91 @@ body {
 @media (min-width: 901px) and (max-width: 1440px) {
   /* Layout per laptop e piccoli desktop */
   /* 1440px x 900px (es. MacBook Air e dispositivi simili). */
+
+  header {
+    z-index: 100 !important;
+
+    img {
+      width: 300px !important;
+      z-index: 999 !important;
+    }
+
+    .navbar-collapse {
+      position: static !important;
+      transform: none !important;
+      transform-origin: none !important;
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: flex-end !important;
+      gap: 20px !important;
+    }
+
+    .navbar-toggler {
+      display: none !important;
+    }
+
+    .navbar {
+      /* background-color: var(--secondary-color); */
+      position: sticky !important;
+      top: -20% !important;
+      z-index: 1050;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      padding: 0 !important;
+    }
+
+    .navbar-brand {
+      margin-left: 10px !important;
+    }
+
+    .navbar-nav {
+      /* margin-right: 10px !important; */
+      background-color: var(--secondary-color);
+      position: absolute !important;
+      bottom: 2% !important;
+      right: 20% !important;
+      /* padding: 4em 1em 1em 1em !important; */
+      border-radius: 0 0 20px 20px;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      font-weight: bold;
+    }
+
+    .nav-item {
+      position: relative !important;
+    }
+
+    .nav-link {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      text-transform: uppercase;
+      font-size: 1em !important;
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      padding: 3em 1.25em 2em 1.25em !important;
+      text-align: center !important;
+      transition: background-color 0.3s ease !important;
+      text-align: center !important;
+    }
+
+    .nav-link:hover {
+      background-color: var(--warning-color) !important;
+      border-radius: 0 !important;
+    }
+
+    .nav-item:first-child .nav-link:hover {
+      border-radius: 0 0 0 20px !important;
+    }
+
+    .nav-item:last-child .nav-link:hover {
+      border-radius: 0 0 20px 0 !important;
+    }
+  }
 }
 
 /* #endregion Laptop e desktop piccoli */

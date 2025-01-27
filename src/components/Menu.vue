@@ -37,7 +37,7 @@ export default {
                         <a class="nav-link" href="#about_us">Chi siamo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mission">Missione</a>
+                        <a class="nav-link" href="#mission">Mission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacts">Contatti</a>
