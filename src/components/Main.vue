@@ -436,6 +436,10 @@ export default {
         }
     }
 
+    .mine_banner_text_dodo {
+        padding-top: 1.2em;
+    }
+
     .mine_font {
         font-family: 'Rock Salt', cursive !important;
         /* font-family: 'Patrick Hand', cursive !important; */

@@ -829,7 +829,6 @@ body {
     }
 
     .navbar {
-      /* background-color: var(--secondary-color); */
       position: sticky !important;
       top: -20% !important;
       z-index: 1050;
@@ -1013,11 +1012,11 @@ body {
 
     .carousel {
       height: 850px !important;
-      max-width: 1200px !important;
+      max-width: 1750px !important;
     }
 
     .carousel-container {
-      margin-top: 1em !important;
+      margin-top: 4em !important;
     }
 
     .person-card {
@@ -1025,8 +1024,8 @@ body {
     }
 
     .person-image {
-      width: 250px !important;
-      height: 250px !important;
+      width: 280px !important;
+      height: 280px !important;
     }
 
     .person-info {
@@ -1041,6 +1040,7 @@ body {
     .inactive-image {
       width: 200px !important;
       height: 200px !important;
+      top: -3% !important;
     }
 
     .nav-arrow {
@@ -1050,7 +1050,7 @@ body {
 
     .left-arrow,
     .right-arrow {
-      top: 16% !important;
+      top: 18% !important;
     }
 
     .left-arrow {

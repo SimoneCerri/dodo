@@ -54,12 +54,16 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 <!--
 #### TO DO ####
 - Font scritta DODO [ ]
-- VW da fixare in LG [ ]
+- VW da fixare in LG [X]
 - Info da Nicoletta per riempire [ ]
 - Layout mobile [X]
 - Layout pad [X]
 - Layout laptop [X]
-- Layout desktop [ ]
+- Layout desktop [x]
+- Hover BTN [ ]
+- Hover extra [ ]
+- Move style-scoped into CSS [ ]
+- Componentize BTN [ ]
 - Readme [X]
     - Docs Links [X]
     - Team Links [X]
