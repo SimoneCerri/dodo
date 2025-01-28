@@ -53,41 +53,44 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 
 <!--
 #### TO DO ####
-- Menu background rotto
-- Font scritta DODO
-- VW da fixare colpa img
-- Info da Nicoletta per riempire
-- Layout pad
-- Layout desktop
-- CEO
-- Deploy
-- Readme [ ]
+- Font scritta DODO [ ]
+- VW da fixare in LG [ ]
+- Info da Nicoletta per riempire [ ]
+- Layout mobile [X]
+- Layout pad [X]
+- Layout laptop [X]
+- Layout desktop [ ]
+- Readme [X]
     - Docs Links [X]
     - Team Links [X]
-- ColorRoot [ ]
-- App [ ]
-    - Header [ ]
-        - SX [ ]
-            - Logo [ ]
-        - DX [ ]
-            - Home [ ]
-            - Chi Siamo [ ]
-            - Servizi [ ]
-            - Contatti [ ]
-    - Main [ ]
-        - Sections [ ]
-            - Chi Siamo [ ]
-            - Servizi [ ]
-            - Contatti [ ]
-    - Footer [ ]
-    - Button [ ]
-    - Logo [ ]
-- Assets [ ]
-    - Img [ ]
-    - Css [ ]
-- Hot to test scroll on mobile from pc
-- SEO
-- DEPLOY
+- ColorRoot [X]
+- App [X]
+    - Header [X]
+        - SX [X]
+            - Logo [X]
+        - DX [X]
+            - Menù [X]
+                - Home [X]
+                - Chi Siamo [X]
+                - Servizi [X]
+                - Contatti [X]
+    - Main [X]
+        - Sections [X]
+            - Call to action
+            - Servizi [X]
+            - Chi Siamo [X]
+            - Mission [X]
+            - Contatti [X]
+    - Footer [X]
+        - PRIVACY [ ]
+        - Cookies [ ]
+- Assets [X]
+    - Img [X]
+    - Css [X]
+- Hot to test scroll on mobile from pc [ ]
+- Img on public or not [ ]
+- SEO [ ]
+- DEPLOY [ ]
 - Presentation [ ]
     -General view
         - Good and easy UI/UX
