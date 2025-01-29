@@ -266,7 +266,7 @@ export default {
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi" alt=""
-                                class="city_icon">
+                                class="city_icon brindisi">
                         </div>
                         <div class="col-7 col_brindisi p-0">
                             <div class="row flex-column gap-3">
@@ -582,7 +582,7 @@ export default {
         background-size: cover;
         background-position: center;
         position: absolute;
-        top: -78px;
+        top: -60px;
         left: 50%;
         transform: translateX(-50%);
         border: 3px solid white;
@@ -593,8 +593,8 @@ export default {
     .inactive-image {
         position: absolute;
         top: 30%;
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         background-size: cover;
         background-position: center;
@@ -604,13 +604,13 @@ export default {
     }
 
     .inactive-image.left {
-        left: 15%;
+        left: 14%;
         top: 0%;
         transform: translateX(-50%);
     }
 
     .inactive-image.right {
-        right: 15%;
+        right: 14%;
         top: 0%;
         transform: translateX(50%);
     }
@@ -634,18 +634,18 @@ export default {
         padding: 0 !important;
         width: 10px !important;
         position: absolute;
-        top: 16%;
+        top: 14%;
         transform: translateY(-50%);
         cursor: pointer;
     }
 
     .left-arrow {
-        left: 23%;
+        left: 19%;
         z-index: 1100;
     }
 
     .right-arrow {
-        right: 23%;
+        right: 20%;
         z-index: 1100;
     }
 }
