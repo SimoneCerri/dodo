@@ -26,8 +26,8 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - <span style="color: #333"> Dark </span> (#333)
 
 ### 🗚 **<span style="color: #BBD9D4"> FONT </span>** ###
-- Goldplay.
-- Fish Fingers.
+- Rock Salt.
+- Nunito.
 
 ### 🐶 **<span style="color: #D31C19"> LOGO </span>** ###
 - small_logo (cravatta/collare) .
@@ -54,16 +54,22 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 <!--
 #### TO DO ####
 - Font scritta DODO [ ]
-- VW da fixare in LG [X]
 - Info da Nicoletta per riempire [ ]
-- Layout mobile [X]
-- Layout pad [X]
-- Layout laptop [X]
-- Layout desktop [x]
 - Hover BTN [ ]
 - Hover extra [ ]
 - Move style-scoped into CSS [ ]
 - Componentize BTN [ ]
+- Hot to test scroll on mobile from pc [ ]
+- Img on public or not [ ]
+- PRIVACY [ ]
+- COOKIES [ ]
+- SEO [ ]
+- DEPLOY [ ]
+- Layout mobile [X]
+- Layout pad [X]
+- Layout laptop [X]
+- Layout desktop [x]
+- VW da fixare in LG [X]
 - Readme [X]
     - Docs Links [X]
     - Team Links [X]
@@ -91,10 +97,6 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - Assets [X]
     - Img [X]
     - Css [X]
-- Hot to test scroll on mobile from pc [ ]
-- Img on public or not [ ]
-- SEO [ ]
-- DEPLOY [ ]
 - Presentation [ ]
     -General view
         - Good and easy UI/UX

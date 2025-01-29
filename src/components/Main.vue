@@ -18,6 +18,12 @@ export default {
                 { name: 'BOB', description: 'Responsabile Brindisi', image: 'smile2.jpg' },
                 { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli.</strong>', image: 'about_us_dodo.png' },
             ],
+            isHoveredBrindisi: false,
+            isHoveredTorino: false,
+            iconDefaultTorino: "/src/assets/img/icon_torino.png",
+            iconHoverTorino: "/src/assets/img/icon_torino_hover.png",
+            iconDefaultBrindisi: "/src/assets/img/icon_brindisi.png",
+            iconHoverBrindisi: "/src/assets/img/icon_brindisi_hover.png",
         }
     },
     methods: {
@@ -225,10 +231,11 @@ export default {
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
-                <div class="col-11 col-lg-6 mine_bg_tertiary p-3 rounded-5">
+                <div class="col-11 col-lg-6 mine_bg_tertiary p-3 rounded-5" @mouseover="isHoveredTorino = true"
+                    @mouseleave="isHoveredTorino = false">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
-                            <img src="../assets/img/icon_torino.png" alt="" class="city_icon">
+                            <img :src="isHoveredTorino ? iconHoverTorino : iconDefaultTorino" alt="" class="city_icon">
                         </div>
                         <div class="col-7 p-0">
                             <div class="row flex-column gap-3">
@@ -254,10 +261,12 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-11 col-lg-6 mine_bg_warning p-3 rounded-5">
+                <div class="col-11 col-lg-6 mine_bg_warning p-3 rounded-5" @mouseover="isHoveredBrindisi = true"
+                    @mouseleave="isHoveredBrindisi = false">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
-                            <img src="../assets/img/icon_brindisi.png" alt="" class="city_icon brindisi">
+                            <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi" alt=""
+                                class="city_icon">
                         </div>
                         <div class="col-7 col_brindisi p-0">
                             <div class="row flex-column gap-3">
@@ -683,6 +692,33 @@ export default {
 
     .col-11 {
         height: 180px;
+    }
+
+    .col-11:nth-child(1):hover {
+        background-color: var(--warning-color) !important;
+
+        .row {
+            color: white !important;
+        }
+
+        h2,
+        div {
+            color: white !important;
+        }
+    }
+
+    .col-11:nth-child(2):hover {
+        background-color: var(--tertiary-color) !important;
+        color: var(--strong-color) !important;
+
+        .row {
+            color: var(--strong-color) !important;
+        }
+
+        h2,
+        div {
+            color: var(--strong-color) !important;
+        }
     }
 
     .mine_h {
