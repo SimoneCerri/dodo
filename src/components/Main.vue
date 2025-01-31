@@ -23,7 +23,7 @@ export default {
             iconDefaultTorino: "/src/assets/img/icon_torino.png",
             iconHoverTorino: "/src/assets/img/icon_torino_hover.png",
             iconDefaultBrindisi: "/src/assets/img/icon_brindisi.png",
-            iconHoverBrindisi: "/src/assets/img/icon_brindisi_hover.png",
+            iconHoverBrindisi: "/src/assets/img/icon_brindisi.png",
         }
     },
     methods: {
@@ -110,7 +110,7 @@ export default {
                 </h1>
             </div>
             <div class="col">
-                DODO offre <strong>soluzione create su misura da un team di professionisti</strong> per accompagnare,
+                DODO offre <strong>soluzioni create su misura da un team di professionisti</strong> per accompagnare,
                 informando, il
                 cliente in un <strong>percorso di scelta libera.</strong>
             </div>
@@ -151,7 +151,7 @@ export default {
             CHI SIAMO
         </h1>
         <div id="about-us-carousel" class="carousel">
-            <button @click="prevPerson" class="nav-arrow left-arrow">❮</button>
+            <button @click="prevPerson" class="nav-arrow left-arrow"><font-awesome-icon icon="chevron-left" /></button>
 
             <div class="carousel-container">
                 <div v-for="(person, index) in people" :key="index"
@@ -171,7 +171,8 @@ export default {
                 </div>
             </div>
 
-            <button @click="nextPerson" class="nav-arrow right-arrow">❯</button>
+            <button @click="nextPerson" class="nav-arrow right-arrow"><font-awesome-icon
+                    icon="chevron-right" /></button>
         </div>
         <a href="#mission" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
@@ -231,14 +232,14 @@ export default {
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
-                <div class="col-11 col-lg-6 mine_bg_tertiary p-3 rounded-5" @mouseover="isHoveredTorino = true"
-                    @mouseleave="isHoveredTorino = false">
+                <div class="col-11 col-lg-6 d-flex justify-content-center align-items-center mine_bg_tertiary p-3 rounded-5"
+                    @mouseover="isHoveredTorino = true" @mouseleave="isHoveredTorino = false">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img :src="isHoveredTorino ? iconHoverTorino : iconDefaultTorino" alt="" class="city_icon">
                         </div>
                         <div class="col-7 p-0">
-                            <div class="row flex-column gap-3">
+                            <div class="row flex-column h-100 justify-content-center">
                                 <div class="col-6 fw-bold">
                                     <h2>
                                         TORINO
@@ -261,15 +262,15 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-11 col-lg-6 mine_bg_warning p-3 rounded-5" @mouseover="isHoveredBrindisi = true"
-                    @mouseleave="isHoveredBrindisi = false">
+                <div class="col-11 col-lg-6 d-flex justify-content-center align-items-center mine_bg_warning p-3 rounded-5"
+                    @mouseover="isHoveredBrindisi = true" @mouseleave="isHoveredBrindisi = false">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi" alt=""
                                 class="city_icon brindisi">
                         </div>
                         <div class="col-7 col_brindisi p-0">
-                            <div class="row flex-column gap-3">
+                            <div class="row flex-column flex-column h-100 justify-content-center">
                                 <div class="col-6 fw-bold">
                                     <h2>
                                         BRINDISI
@@ -333,7 +334,7 @@ export default {
     </section>
     <a href="#" class="btn_up btn" v-show="showBackToTop" @click="scrollToTop">
         <div class="back_to_top">
-            <img src="/src/assets/img/logo_marrone.png" alt="">
+            <font-awesome-icon icon="circle-chevron-up" />
         </div>
     </a>
 </template>
@@ -424,7 +425,7 @@ export default {
 
     .btn_next {
         position: absolute;
-        bottom: 14%;
+        bottom: 15.5%;
         height: 12vh;
         display: flex;
         justify-content: center;
@@ -446,13 +447,19 @@ export default {
     }
 
     .mine_banner_text_dodo {
-        padding-top: 1.2em;
+        span {
+            font-weight: 800;
+            font-size: 6.2em;
+        }
     }
 
     .mine_font {
-        font-family: 'Rock Salt', cursive !important;
+        /* font-family: 'Rock Salt', cursive !important; */
         /* font-family: 'Patrick Hand', cursive !important; */
         /* font-family: 'Gloria Hallelujah', cursive !important; */
+        font-family: 'Nunito', sans-serif !important;
+        font-weight: 800;
+        font-size: 6.5em;
     }
 }
 
@@ -460,6 +467,10 @@ export default {
     margin-top: -20%;
     z-index: 2;
     background-color: var(--secondary-color);
+
+    h1 {
+        font-weight: 800 !important;
+    }
 
     .mine_btn_brown {
         background-color: var(--strong-color);
@@ -481,7 +492,7 @@ export default {
 
     .btn_next {
         position: absolute;
-        bottom: -3%;
+        bottom: -1%;
         height: 12vh;
         display: flex;
         justify-content: center;
@@ -493,6 +504,10 @@ export default {
 
 #about_us {
     background-color: var(--secondary-color);
+
+    h1 {
+        font-weight: 800 !important;
+    }
 
     img {
         z-index: 20;
@@ -513,7 +528,7 @@ export default {
 
     .btn_next {
         position: absolute;
-        bottom: -3%;
+        bottom: -1%;
         height: 12vh;
         display: flex;
         justify-content: center;
@@ -527,7 +542,7 @@ export default {
         justify-content: center;
         position: relative;
         width: 100%;
-        height: 800px;
+        height: 680px;
         max-width: 800px;
         margin: 0 auto;
         overflow: hidden;
@@ -535,7 +550,7 @@ export default {
     }
 
     .carousel-container {
-        margin-top: 2em;
+        margin-top: 2.5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -585,7 +600,8 @@ export default {
         top: -60px;
         left: 50%;
         transform: translateX(-50%);
-        border: 3px solid white;
+        border: 7px solid white;
+        /* 10px mediaquery */
         z-index: 1000;
         transition: all 0.5s ease;
     }
@@ -593,8 +609,8 @@ export default {
     .inactive-image {
         position: absolute;
         top: 30%;
-        width: 110px;
-        height: 110px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         background-size: cover;
         background-position: center;
@@ -606,7 +622,7 @@ export default {
     .inactive-image.left {
         left: 14%;
         top: 0%;
-        transform: translateX(-50%);
+        transform: translateX(-52%);
     }
 
     .inactive-image.right {
@@ -634,18 +650,18 @@ export default {
         padding: 0 !important;
         width: 10px !important;
         position: absolute;
-        top: 14%;
+        top: 12%;
         transform: translateY(-50%);
         cursor: pointer;
     }
 
     .left-arrow {
-        left: 19%;
+        left: 23%;
         z-index: 1100;
     }
 
     .right-arrow {
-        right: 20%;
+        right: 24%;
         z-index: 1100;
     }
 }
@@ -653,6 +669,10 @@ export default {
 #mission {
     background-color: var(--secondary-color);
     margin-bottom: 4em;
+
+    h1 {
+        font-weight: 800 !important;
+    }
 
     .btn_next {
         position: absolute;
@@ -685,17 +705,23 @@ export default {
 
     .btn_next {
         z-index: 10;
+        position: absolute;
+        bottom: -1%;
     }
 }
 
 #contacts {
+
+    h1 {
+        font-weight: 800 !important;
+    }
 
     .col-11 {
         height: 180px;
     }
 
     .col-11:nth-child(1):hover {
-        background-color: var(--warning-color) !important;
+        background-color: var(--strong-color) !important;
 
         .row {
             color: white !important;
@@ -708,16 +734,16 @@ export default {
     }
 
     .col-11:nth-child(2):hover {
-        background-color: var(--tertiary-color) !important;
-        color: var(--strong-color) !important;
+        background-color: var(--strong-color) !important;
+        color: white !important;
 
         .row {
-            color: var(--strong-color) !important;
+            color: white !important;
         }
 
         h2,
         div {
-            color: var(--strong-color) !important;
+            color: white !important;
         }
     }
 
@@ -726,14 +752,14 @@ export default {
     }
 
     .city_icon {
-        padding: 0.8em;
+        padding: 1.2em;
         border-radius: 0;
         width: 90%;
     }
 
     .brindisi {
-        width: 120%;
-        height: 80%;
+        padding: 0;
+        padding: 1em;
     }
 
     h2 {
@@ -753,13 +779,8 @@ export default {
 }
 
 .back_to_top {
-
-    img {
-        height: 60px;
-        width: 60px;
-        border-radius: 40%;
-        opacity: 75%;
-    }
+    color: var(--strong-color);
+    font-size: 2.5em;
 }
 
 .btn_up {

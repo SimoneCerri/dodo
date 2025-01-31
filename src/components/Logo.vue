@@ -20,7 +20,7 @@ export default {
         updateLogoSrc() {
             const width = window.innerWidth;
 
-            if (width > 900) {
+            if (width > 800) {
                 this.logoSrc = door2doorMarrone;
             } else {
                 this.logoSrc = logoMarrone;

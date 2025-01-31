@@ -53,14 +53,14 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 
 <!--
 #### TO DO ####
-- Font scritta DODO [ ]
+- Font scritta DODO [X]
+- Img on public or not [ ]
 - Info da Nicoletta per riempire [ ]
-- Hover BTN [ ]
-- Hover extra [ ]
+- Hover CONTATTACI [ ]
+- Hover btn_next [ ]
 - Move style-scoped into CSS [ ]
 - Componentize BTN [ ]
-- Hot to test scroll on mobile from pc [ ]
-- Img on public or not [ ]
+- How to test scroll on mobile from pc [ ]
 - PRIVACY [ ]
 - COOKIES [ ]
 - SEO [ ]

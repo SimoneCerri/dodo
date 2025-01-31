@@ -57,7 +57,6 @@ export default {
     width: 50px;
     position: relative;
     padding: 1em;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-toggler-icon {
