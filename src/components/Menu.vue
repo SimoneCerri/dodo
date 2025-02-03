@@ -1,46 +1,47 @@
 <script>
-
 export default {
-    name: 'Menu',
-    components:
-    {
-
-    },
-    props: {
-
-    },
+    name: "Menu",
     data() {
         return {
-
-        }
+            isMenuOpen: false,
+        };
     },
-}
+    methods: {
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
+        },
+        closeMenu() {
+            this.isMenuOpen = false;
+        },
+    },
+};
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg rounded-bottom-4">
+    <nav class="navbar navbar-expand-xl rounded-bottom-4">
         <div class="container-fluid d-flex justify-content-center">
             <button class="navbar-toggler collapsed px-4" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-label="Toggle navigation" @click="toggleMenu">
                 <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
+            <div :class="['collapse', 'navbar-collapse', { 'show': isMenuOpen }]" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#call_to_action">Home</a>
+                        <a @click="closeMenu" class="nav-link active" aria-current="page"
+                            href="#call_to_action">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Servizi</a>
+                        <a @click="closeMenu" class="nav-link" href="#services">Servizi</a>
                     </li>
                     <li class="nav-item text-nowrap">
-                        <a class="nav-link" href="#about_us">Chi siamo</a>
+                        <a @click="closeMenu" class="nav-link" href="#about_us">Chi siamo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mission">Mission</a>
+                        <a @click="closeMenu" class="nav-link" href="#mission">Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contatti</a>
+                        <a @click="closeMenu" class="nav-link" href="#contacts">Contatti</a>
                     </li>
                 </ul>
             </div>
@@ -110,7 +111,8 @@ export default {
     padding: 0;
     margin: 0;
     gap: 10px;
-    text-align: center;
+    text-align: right;
+    align-items: flex-end;
 }
 
 .nav-item {
