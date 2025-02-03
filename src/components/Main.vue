@@ -232,7 +232,7 @@ export default {
                 CONTATTI
             </h1>
             <div class="row flex-column justify-content-start align-items-center gap-3 flex-nowrap px-3 h-100 pt-5">
-                <div class="col-11 col-lg-6 d-flex justify-content-center align-items-center mine_bg_tertiary p-3 rounded-5"
+                <div class="col-11 col-xl-6 d-flex justify-content-center align-items-center mine_bg_tertiary p-3 rounded-5"
                     @mouseover="isHoveredTorino = true" @mouseleave="isHoveredTorino = false">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
@@ -262,7 +262,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-11 col-lg-6 d-flex justify-content-center align-items-center mine_bg_warning p-3 rounded-5"
+                <div class="col-11 col-xl-6 d-flex justify-content-center align-items-center mine_bg_warning p-3 rounded-5"
                     @mouseover="isHoveredBrindisi = true" @mouseleave="isHoveredBrindisi = false">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">

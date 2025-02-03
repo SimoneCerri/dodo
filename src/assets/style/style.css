@@ -225,7 +225,7 @@ body {
   #about_us {
 
     h1 {
-      font-size: 3.7em !important;
+      font-size: 4em !important;
       font-weight: 700 !important;
     }
 
@@ -329,19 +329,6 @@ body {
 
     .row {
       justify-content: center !important;
-      padding-top: 0 !important;
-      padding-top: 0.5em !important;
-    }
-
-    .col-7 {
-      padding-left: 4em !important;
-      padding-top: 1em !important;
-
-      .col-6:nth-child(2) {
-        padding-left: 1.5em !important;
-        font-size: 1.2em !important;
-      }
-
     }
 
     h1 {
@@ -354,18 +341,16 @@ body {
     }
 
     .city_icon {
-      width: 60% !important;
+      width: 70% !important;
     }
 
     .brindisi {
       width: 90% !important;
-      height: 90% !important;
     }
 
     h2 {
       font-weight: 750 !important;
       font-size: 2em !important;
-      padding-left: 1em !important;
     }
 
     .col-md-12 {
@@ -683,11 +668,8 @@ body {
     }
 
     .col-7 {
-      padding-left: 4em !important;
-      padding-top: 1em !important;
 
       .col-6:nth-child(2) {
-        padding-left: 1.5em !important;
         font-size: 1.2em !important;
       }
 
@@ -703,18 +685,16 @@ body {
     }
 
     .city_icon {
-      width: 60% !important;
+      width: 70% !important;
     }
 
     .brindisi {
       width: 90% !important;
-      height: 90% !important;
     }
 
     h2 {
       font-weight: 750 !important;
       font-size: 2em !important;
-      padding-left: 1em !important;
     }
 
     .col-md-12 {
@@ -897,13 +877,13 @@ body {
     }
 
     .row .col:nth-child(1) {
-      font-size: 1.2em !important;
+      font-size: 1.4em !important;
     }
 
     .row .col:nth-child(2),
     .row .col:nth-child(3),
     .row .col:nth-child(5) {
-      font-size: 1.3em !important;
+      font-size: 1.5em !important;
     }
 
     .row .col:nth-child(5) {
@@ -915,7 +895,7 @@ body {
 
     .row .col:nth-child(4),
     .row .col:nth-child(6) {
-      font-size: 1.3em !important;
+      font-size: 1.5em !important;
     }
 
     .mine_btn_brown {
@@ -936,12 +916,12 @@ body {
   #about_us {
 
     h1 {
-      font-size: 3.7em !important;
+      font-size: 4.4em !important;
       font-weight: 700 !important;
     }
 
     .carousel {
-      height: 900px !important;
+      height: 1000px !important;
     }
 
     .carousel-container {
@@ -949,7 +929,7 @@ body {
     }
 
     .person-card {
-      height: 750px !important;
+      height: 850px !important;
     }
 
     .person-image {
@@ -958,7 +938,7 @@ body {
     }
 
     .person-info {
-      font-size: 1.4em;
+      font-size: 1.5em;
     }
 
     .inactive-image {
@@ -967,7 +947,7 @@ body {
     }
 
     .nav-arrow {
-      font-size: 2.3em !important;
+      font-size: 2.4em !important;
       color: var(--tertiary-color) !important;
     }
 
@@ -999,7 +979,7 @@ body {
       margin-top: 1em;
 
       .col-10 {
-        font-size: 1.3em !important;
+        font-size: 1.5em !important;
       }
     }
 
@@ -1045,38 +1025,34 @@ body {
     }
 
     .col-7 {
-      padding-left: 4em !important;
-      padding-top: 1em !important;
 
       .col-6:nth-child(2) {
-        padding-left: 1.5em !important;
         font-size: 1.2em !important;
       }
 
     }
 
     h1 {
-      font-size: 4em !important;
+      font-size: 4.3em !important;
       margin-bottom: -1em !important;
     }
 
     .col-11 {
-      height: 260px !important;
+      height: 300px !important;
+      width: 80%;
     }
 
     .city_icon {
-      width: 60% !important;
+      width: 70% !important;
     }
 
     .brindisi {
       width: 90% !important;
-      height: 90% !important;
     }
 
     h2 {
       font-weight: 750 !important;
-      font-size: 2em !important;
-      padding-left: 1em !important;
+      font-size: 2.3em !important;
     }
 
     .col-md-12 {
@@ -1298,6 +1274,7 @@ body {
       gap: 0 !important;
       height: 90% !important;
       width: 70% !important;
+      padding: 1em !important;
     }
 
     .row .col:nth-child(1) {
@@ -1314,7 +1291,7 @@ body {
     .row .col:nth-child(2),
     .row .col:nth-child(3),
     .row .col:nth-child(5) {
-      font-size: 1.1em !important;
+      font-size: 1.2em !important;
     }
 
     .row .col:nth-child(4),
@@ -1340,7 +1317,7 @@ body {
   #about_us {
 
     h1 {
-      font-size: 4em !important;
+      font-size: 3.8em !important;
       font-weight: 800 !important;
     }
 
@@ -1367,6 +1344,11 @@ body {
 
       p {
         margin: 0 !important;
+      }
+
+      h3 {
+        margin: 0 !important;
+        margin-top: 60px !important;
       }
 
     }
@@ -1426,7 +1408,7 @@ body {
     }
 
     .row:nth-child(2) {
-      margin-top: 6em !important;
+      margin-top: 2em !important;
       padding-top: 0 !important;
     }
 
@@ -1444,7 +1426,7 @@ body {
       .overlay-img {
         height: 75% !important;
         width: 40% !important;
-        bottom: 45% !important;
+        bottom: 40% !important;
         left: 10% !important;
       }
     }
@@ -1456,75 +1438,64 @@ body {
   }
 
   #contacts {
-    margin-top: 0 !important;
-    padding-top: 2em !important;
+    .row {
+      justify-content: center !important;
+      padding-top: 0 !important;
+      padding-top: 0.5em !important;
+      flex-direction: row !important;
+
+      .row {
+
+        .row {
+          flex-direction: column !important;
+        }
+      }
+    }
+
+    .col-7 {
+
+      .col-6:nth-child(2) {
+        font-size: 1.2em !important;
+      }
+
+    }
 
     h1 {
-      font-size: 4em !important;
-      font-weight: 800 !important;
-    }
-
-    .container {
-      max-width: 1100px !important;
-    }
-
-    .row {
-      flex-direction: row !important;
-      padding-top: 0 !important;
-      margin-top: -5% !important;
-      padding: 0 !important;
+      font-size: 4.3em !important;
+      margin-bottom: -1em !important;
     }
 
     .col-11 {
-      height: 35% !important;
-
-      .row {
-        padding-top: 1.8em !important;
-      }
-    }
-
-    .row {
-
-      .brindisi {
-        width: 90% !important;
-        height: 100% !important;
-        padding-right: 1em !important;
-
-      }
-
-      .col_brindisi {
-        padding-left: 1em !important;
-      }
-    }
-
-    .col-4 {
-      font-size: 1.1em !important;
-    }
-
-    .mine_h {
-      height: 100vh;
+      height: 300px !important;
+      /* width: 80%; */
     }
 
     .city_icon {
-      padding: 1.2em !important;
-      border-radius: 0;
       width: 70% !important;
     }
 
+    .brindisi {
+      width: 90% !important;
+    }
+
     h2 {
-      font-weight: 800 !important;
+      font-weight: 750 !important;
+      font-size: 2.3em !important;
+    }
+
+    .col-md-12 {
+      font-size: 1.2em !important;
     }
 
     #follow_us {
       width: 100% !important;
       height: 16em !important;
       margin-top: -3% !important;
-      padding: 3em 0 !important;
+      padding-bottom: 3em !important;
 
       .row {
         justify-content: space-between !important;
         gap: 0 !important;
-        padding-top: 2em !important;
 
         .col-md-6 {
           margin: 0 !important;
@@ -1538,6 +1509,7 @@ body {
           }
 
           .row {
+            flex-direction: row !important;
 
             .col-4:nth-child(1) {
               font-size: 1.2em !important;
@@ -1622,7 +1594,7 @@ body {
     .navbar-nav {
       background-color: var(--secondary-color);
       position: absolute !important;
-      bottom: 2% !important;
+      bottom: -2em !important;
       right: -80% !important;
       border-radius: 0 0 20px 20px;
       display: flex !important;
@@ -1639,11 +1611,11 @@ body {
       background-color: transparent !important;
       box-shadow: none !important;
       text-transform: uppercase;
-      font-size: 1.2em !important;
+      font-size: 1.5em !important;
       display: block !important;
       width: 100% !important;
       height: 100% !important;
-      padding: 3em 1.25em 1.5em 1.25em !important;
+      padding: 3em 1.5em 1.5em 1.5em !important;
       text-align: center !important;
       transition: background-color 0.3s ease !important;
       text-align: center !important;
@@ -1736,7 +1708,7 @@ body {
     }
 
     .row .col:nth-child(1) {
-      font-size: 1.3em !important;
+      font-size: 1.4em !important;
     }
 
     .row .col:nth-child(2) {
@@ -1749,12 +1721,12 @@ body {
     .row .col:nth-child(2),
     .row .col:nth-child(3),
     .row .col:nth-child(5) {
-      font-size: 1.2em !important;
+      font-size: 1.5em !important;
     }
 
     .row .col:nth-child(4),
     .row .col:nth-child(6) {
-      font-size: 1.2em !important;
+      font-size: 1.3em !important;
     }
 
     .mine_btn_brown {
@@ -1803,7 +1775,7 @@ body {
     }
 
     .person-info {
-      font-size: 1.4em;
+      font-size: 1.5em;
 
       p {
         margin: 0 !important;
@@ -1818,7 +1790,7 @@ body {
     }
 
     .nav-arrow {
-      font-size: 2.5em !important;
+      font-size: 3em !important;
       color: var(--tertiary-color) !important;
     }
 
@@ -1833,7 +1805,7 @@ body {
     }
 
     .right-arrow {
-      right: 40.7% !important;
+      right: 41% !important;
       z-index: 1100;
     }
 
@@ -1863,7 +1835,7 @@ body {
       justify-content: center !important;
 
       .col-10 {
-        font-size: 1.3em !important;
+        font-size: 1.5em !important;
       }
 
       .col-10:nth-child(1) {
@@ -1907,75 +1879,63 @@ body {
   }
 
   #contacts {
-    margin-top: 0 !important;
-    padding-top: 2em !important;
+    .row {
+      justify-content: center !important;
+      padding-top: 0 !important;
+      padding-top: 0.5em !important;
+      flex-direction: row !important;
+
+      .row {
+
+        .row {
+          flex-direction: column !important;
+        }
+      }
+    }
+
+    .col-7 {
+
+      .col-6:nth-child(2) {
+        font-size: 1.2em !important;
+      }
+
+    }
 
     h1 {
-      font-size: 5em !important;
-      font-weight: 800 !important;
-    }
-
-    .container {
-      max-width: 1100px !important;
-    }
-
-    .row {
-      flex-direction: row !important;
-      padding-top: 0 !important;
-      margin-top: -8% !important;
-      padding: 0 !important;
+      font-size: 5.5em !important;
+      margin-bottom: -1em !important;
     }
 
     .col-11 {
-      height: 30% !important;
-
-      .row {
-        padding-top: 2.5em !important;
-      }
-    }
-
-    .row {
-
-      .brindisi {
-        width: 90% !important;
-        height: 100% !important;
-        padding-right: 1em !important;
-      }
-
-      .col_brindisi {
-        padding-left: 1em !important;
-      }
-    }
-
-    .col-4 {
-      font-size: 1.2em !important;
-    }
-
-    .mine_h {
-      height: 100vh;
+      height: 350px !important;
     }
 
     .city_icon {
-      padding: 1.2em !important;
-      border-radius: 0;
-      width: 70% !important;
+      width: 80% !important;
+    }
+
+    .brindisi {
+      width: 100% !important;
     }
 
     h2 {
-      font-weight: 800 !important;
+      font-weight: 750 !important;
       font-size: 2.5em !important;
+    }
+
+    .col-md-12 {
+      font-size: 1.3em !important;
     }
 
     #follow_us {
       width: 100% !important;
-      height: 18em !important;
+      height: 16em !important;
       margin-top: -3% !important;
-      padding: 3.5em 0 !important;
+      padding-bottom: 3em !important;
 
       .row {
         justify-content: space-between !important;
         gap: 0 !important;
-        padding-top: 2em !important;
 
         .col-md-6 {
           margin: 0 !important;
@@ -1989,6 +1949,7 @@ body {
           }
 
           .row {
+            flex-direction: row !important;
 
             .col-4:nth-child(1) {
               font-size: 1.2em !important;
