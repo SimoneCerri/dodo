@@ -135,9 +135,11 @@ export default {
                 Per avere più informazioni e scoprire tutti i nostri servizi
             </div>
             <div class="col d-flex justify-content-center align-items-center">
-                <div class="mine_btn_red">
-                    CONTATTACI
-                </div>
+                <a href="#contacts" class="text-decoration-none">
+                    <div class="mine_btn_red">
+                        CONTATTACI
+                    </div>
+                </a>
             </div>
         </div>
         <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -399,6 +401,10 @@ export default {
         }
     }
 
+    .next_session_banner:hover {
+        color: var(--strong-color);
+    }
+
     .about_us_card {
         position: absolute;
         bottom: 12%;
@@ -488,6 +494,10 @@ export default {
         border-radius: 3em;
         padding: 0.6em 3em;
         font-weight: bold;
+    }
+
+    .mine_btn_red:hover {
+        background-color: var(--strong-color);
     }
 
     .btn_next {
