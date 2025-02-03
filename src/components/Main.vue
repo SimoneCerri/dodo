@@ -20,10 +20,10 @@ export default {
             ],
             isHoveredBrindisi: false,
             isHoveredTorino: false,
-            iconDefaultTorino: "/src/assets/img/icon_torino.png",
-            iconHoverTorino: "/src/assets/img/icon_torino_hover.png",
-            iconDefaultBrindisi: "/src/assets/img/icon_brindisi.png",
-            iconHoverBrindisi: "/src/assets/img/icon_brindisi.png",
+            iconDefaultTorino: "icon_torino.png",
+            iconHoverTorino: "icon_torino_hover.png",
+            iconDefaultBrindisi: "icon_brindisi.png",
+            iconHoverBrindisi: "icon_brindisi.png",
         }
     },
     methods: {
@@ -85,11 +85,11 @@ export default {
                     </span>
                 </div>
                 <div class="col-8 d-flex justify-content-center w-100 mine_banner">
-                    <img src="../assets/img/banner_brown.jpg" alt="" class="">
+                    <img src="/banner_brown.jpg" alt="" class="">
                 </div>
             </div>
             <div class="col-12 mine_runner">
-                <img src="../assets/img/dodo_corre.png" alt="">
+                <img src="/dodo_corre.png" alt="">
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -218,8 +218,8 @@ export default {
         </div>
         <div class="row text-center flex-column align-items-center justify-content-start h-100 mine_w pt-4">
             <div class="col-12 d-flex flex-column justify-content-start align-items-center mine_mission_img">
-                <img src="..//assets/img/carpet.jpg" alt="">
-                <img src="..//assets/img/dodo_in_piedi.png" alt="Overlay" class="overlay-img">
+                <img src="/carpet.jpg" alt="">
+                <img src="/dodo_in_piedi.png" alt="Overlay" class="overlay-img">
             </div>
         </div>
         <a href="#contacts" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -301,7 +301,7 @@ export default {
             <div class="container h-100 pt-5">
                 <div class="row justify-content-evenly align-items-center gap-5">
                     <div class="col-4 col-md-6 me-5">
-                        <img src="../assets/img/door2door_marrone.png" alt="">
+                        <img src="/door2door_marrone.png" alt="">
                     </div>
                     <div class="col-4 col-md-6">
                         <div class="row flex-column">
