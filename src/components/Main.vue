@@ -14,16 +14,16 @@ export default {
             showBackToTop: false,
             currentPerson: 0,
             people: [
-                { name: 'NICOLETTA', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.jpg' },
-                { name: 'BOB', description: 'Responsabile Brindisi', image: 'smile2.jpg' },
-                { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli.</strong>', image: 'about_us_dodo.png' },
+                { name: 'NICOLETTA', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.webp' },
+                { name: 'BOB', description: 'Responsabile Brindisi', image: 'smile2.webp' },
+                { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli.</strong>', image: 'about_us_dodo.webp' },
             ],
             isHoveredBrindisi: false,
             isHoveredTorino: false,
-            iconDefaultTorino: "icon_torino.png",
-            iconHoverTorino: "icon_torino_hover.png",
-            iconDefaultBrindisi: "icon_brindisi.png",
-            iconHoverBrindisi: "icon_brindisi.png",
+            iconDefaultTorino: "icon_torino.webp",
+            iconHoverTorino: "icon_torino_hover.webp",
+            iconDefaultBrindisi: "icon_brindisi.webp",
+            iconHoverBrindisi: "icon_brindisi.webp",
         }
     },
     methods: {
@@ -59,10 +59,10 @@ export default {
             return (index === (this.currentPerson + 1) % this.people.length);
         },
     },
-    mounted() {
+    async mounted() {
         window.addEventListener("scroll", this.handleScroll);
     },
-    destroyed() {
+    async destroyed() {
         window.removeEventListener("scroll", this.handleScroll);
     },
 }
@@ -85,11 +85,11 @@ export default {
                     </span>
                 </div>
                 <div class="col-8 d-flex justify-content-center w-100 mine_banner">
-                    <img src="/banner_brown.jpg" alt="" class="">
+                    <img src="/banner_brown.webp" alt="" class="">
                 </div>
             </div>
             <div class="col-12 mine_runner">
-                <img src="/dodo_corre.png" alt="">
+                <img src="/dodo_corre.webp" alt="">
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -218,8 +218,8 @@ export default {
         </div>
         <div class="row text-center flex-column align-items-center justify-content-start h-100 mine_w pt-4">
             <div class="col-12 d-flex flex-column justify-content-start align-items-center mine_mission_img">
-                <img src="/carpet.jpg" alt="">
-                <img src="/dodo_in_piedi.png" alt="Overlay" class="overlay-img">
+                <img src="/carpet.webp" alt="" loading="lazy">
+                <img src="/dodo_in_piedi.webp" alt="Overlay" class="overlay-img" loading="lazy">
             </div>
         </div>
         <a href="#contacts" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -238,7 +238,8 @@ export default {
                     @mouseover="isHoveredTorino = true" @mouseleave="isHoveredTorino = false">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
-                            <img :src="isHoveredTorino ? iconHoverTorino : iconDefaultTorino" alt="" class="city_icon">
+                            <img :src="isHoveredTorino ? iconHoverTorino : iconDefaultTorino" alt="" class="city_icon"
+                                loading="lazy">
                         </div>
                         <div class="col-7 p-0">
                             <div class="row flex-column h-100 justify-content-center">
@@ -269,7 +270,7 @@ export default {
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi" alt=""
-                                class="city_icon brindisi">
+                                class="city_icon brindisi" loading="lazy">
                         </div>
                         <div class="col-7 col_brindisi p-0">
                             <div class="row flex-column flex-column h-100 justify-content-center">
@@ -301,7 +302,7 @@ export default {
             <div class="container h-100 pt-5">
                 <div class="row justify-content-evenly align-items-center gap-5">
                     <div class="col-4 col-md-6 me-5">
-                        <img src="/door2door_marrone.png" alt="">
+                        <img src="/door2door_marrone.webp" alt="" loading="lazy">
                     </div>
                     <div class="col-4 col-md-6">
                         <div class="row flex-column">

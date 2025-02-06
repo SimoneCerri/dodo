@@ -1,6 +1,6 @@
 <script>
-import logoMarrone from '../assets/img/logo_marrone.png';
-import door2doorMarrone from '../assets/img/door2door_marrone.png';
+import logoMarrone from '/logo_marrone.webp';
+import door2doorMarrone from '/door2door_marrone.webp';
 
 export default {
     name: 'Logo',
@@ -9,11 +9,11 @@ export default {
             logoSrc: logoMarrone,
         };
     },
-    mounted() {
+    async mounted() {
         this.updateLogoSrc();
         window.addEventListener('resize', this.updateLogoSrc);
     },
-    beforeUnmount() {
+    async beforeUnmount() {
         window.removeEventListener('resize', this.updateLogoSrc);
     },
     methods: {

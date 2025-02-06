@@ -54,6 +54,12 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 <!--
 #### TO DO ####
 - PERFORMANCE [ ]
+    - PNG into SVG/WebP [X]
+    - Lazy loading [X]
+    - Aspect ratio / width [X]
+    - rel preload fonts (create problem, remove) [X]
+    - Minificazione codice [ ]
+    - Script defer o async [ ]
 - COOKIES [ ]
 - PRIVACY [ ]
 - SEO [ ]
