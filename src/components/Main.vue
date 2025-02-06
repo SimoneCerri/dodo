@@ -312,7 +312,9 @@ export default {
                             <div class="col-4 col-lg-12 ms-2 qui">
                                 <div class="row flex-nowrap qui">
                                     <div class="col-12 col-lg-3 p-0">
-                                        <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+                                        <a href="https://www.facebook.com/share/18qC7VoJXt/" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
                                                 <font-awesome-icon :icon="['fab', 'facebook']"
                                                     style="font-size: 2em; color: var(--strong-color);" />
@@ -320,7 +322,9 @@ export default {
                                         </a>
                                     </div>
                                     <div class="col-12 col-lg-3 p-0">
-                                        <a href="" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+                                        <a href="https://www.instagram.com/dodoconsulente?igsh=MXB0MGpub3A0NHZnbg=="
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
                                                 <font-awesome-icon :icon="['fab', 'instagram']"
                                                     style="font-size: 2em; color: var(--strong-color);" />
