@@ -53,6 +53,8 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 
 <!--
 #### TO DO ####
+- Screen < 400 (heigh problem) [ ]
+- Screen > 1080 (ex. 2560x1440) [ ]
 - PERFORMANCE [X]
     - PNG into SVG/WebP [X]
     - Lazy loading [X]
@@ -60,8 +62,9 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
     - rel preload fonts (create problem, remove) [X]
     - Minificazione codice [X]
     - Script defer o async [X]
-- COOKIES [ ]
+- COOKIES [x]
 - PRIVACY [ ]
+    - iubenda €29/anno
 - SEO [ ]
 - DEPLOY [ ]
 - Info da Nicoletta per riempire [ ]
