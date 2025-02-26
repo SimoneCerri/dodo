@@ -11,6 +11,7 @@ export default {
     },
     data() {
         return {
+            imageLoaded: false,
             showBackToTop: false,
             currentPerson: 0,
             people: [
@@ -58,6 +59,11 @@ export default {
         isRight(index) {
             return (index === (this.currentPerson + 1) % this.people.length);
         },
+        setSlide() {
+            setTimeout(() => {
+                this.imageLoaded = true;
+            }, 100);
+        },
     },
     async mounted() {
         window.addEventListener("scroll", this.handleScroll);
@@ -89,7 +95,9 @@ export default {
                 </div>
             </div>
             <div class="col-12 mine_runner">
-                <img src="/dodo_corre.webp" alt="">
+                <!-- <img src="/dodo_corre.webp" alt=""> -->
+                <img src="/dodo_corre.webp" alt="" :class="{ 'mine-runner-animation': true, 'active': imageLoaded }"
+                    @load="setSlide" />
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -818,5 +826,14 @@ export default {
 
 .mine_bg_warning {
     background: var(--warning-color);
+}
+
+.mine-runner-animation {
+    transform: translateX(100vw);
+    transition: transform 1s ease-out;
+}
+
+.mine-runner-animation.active {
+    transform: translateX(0);
 }
 </style>
