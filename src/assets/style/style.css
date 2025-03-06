@@ -55,6 +55,319 @@ body {
 
 /* #region MediaQuery */
 
+/* #region management low-heigth devices */
+@media (max-height: 700px) {
+
+  #call_to_action {
+    .mine_runner {
+      img {
+        width: 500px !important;
+      }
+    }
+
+    .btn_next {
+      bottom: 8% !important;
+    }
+  }
+
+  #services {
+
+    h1 {
+      font-size: 2em !important;
+    }
+
+    .row {
+      gap: 0 !important;
+      padding: 1em !important;
+    }
+
+    .mine_btn_brown {
+      margin: 0.1em !important;
+    }
+
+    .mine_btn_red {
+      padding: 0.3em 1.5em !important;
+    }
+
+    .mine_btn_red:hover {
+      background-color: var(--strong-color);
+    }
+
+    .btn_next {
+      bottom: 1% !important;
+    }
+
+  }
+
+  #about_us {
+    padding-top: 1em !important;
+
+    h1 {
+      font-size: 2em !important;
+    }
+
+    .btn_next {
+      position: absolute;
+      bottom: 1% !important;
+      height: 12vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--warning-color);
+    }
+
+    .carousel {
+      height: 600px !important;
+      max-width: 800px;
+    }
+
+    .carousel-container {
+      margin-top: 1.25em !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      opacity: 0.5;
+      transform: scale(0.8);
+      transition: opacity 0.5s, transform 0.5s;
+      width: 80% !important;
+      text-align: center;
+      margin: 0;
+    }
+
+    .carousel-item.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .person-card {
+      background: var(--warning-color);
+      border-radius: 3em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 0 !important;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 450px !important;
+    }
+
+    .person-info {
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+    }
+
+    .person-image {
+      width: 120px !important;
+      height: 120px !important;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: -70px !important;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 7px solid white;
+      /* 10px mediaquery */
+      z-index: 1000;
+      transition: all 0.5s ease;
+    }
+
+    .inactive-image {
+      position: absolute;
+      top: 30%;
+      width: 80px !important;
+      height: 80px !important;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(3px) grayscale(50%);
+      transition: all 0.5s ease;
+      z-index: 900;
+    }
+
+    .inactive-image.left {
+      left: 14%;
+      top: 0%;
+      transform: translateX(-52%);
+    }
+
+    .inactive-image.right {
+      right: 14%;
+      top: 0%;
+      transform: translateX(50%);
+    }
+
+    .person-info h3 {
+      margin: 40px 0 10px;
+      font-size: 1.2em;
+    }
+
+    .nav-arrow {
+      background: none;
+      border: none;
+      font-size: 1.7em;
+      cursor: pointer;
+      color: var(--tertiary-color) !important;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      background: none !important;
+      padding: 0 !important;
+      width: 10px !important;
+      position: absolute;
+      top: 12%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .left-arrow {
+      left: 23%;
+      z-index: 1100;
+    }
+
+    .right-arrow {
+      right: 24%;
+      z-index: 1100;
+    }
+  }
+
+  #mission {
+    margin-bottom: 4em;
+    padding-top: 1em !important;
+
+    h1 {
+      font-size: 2em !important;
+    }
+
+    .row {
+      gap: 0 !important;
+    }
+
+    .btn_next {
+      position: absolute;
+      bottom: -3%;
+      height: 12vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--warning-color);
+    }
+
+    .mine_mission_img {
+      position: relative;
+
+      img:nth-child(1) {
+        height: 40% !important;
+        object-fit: cover;
+        object-position: bottom;
+      }
+
+      .overlay-img {
+        position: absolute;
+        bottom: 35% !important;
+        right: 45% !important;
+        width: 250px !important;
+        height: auto;
+      }
+    }
+
+    .btn_next {
+      z-index: 10;
+      position: absolute;
+      bottom: 2% !important;
+    }
+  }
+
+  #contacts {
+
+    h1 {
+      font-size: 2em !important;
+    }
+
+    .col-11 {
+      height: 180px;
+    }
+
+    .container {
+      .row {
+        padding: 0 !important;
+      }
+    }
+
+    .col-11:nth-child(1):hover {
+      background-color: var(--strong-color) !important;
+
+      .row {
+        color: white !important;
+      }
+
+      h2,
+      div {
+        color: white !important;
+      }
+    }
+
+    .col-11:nth-child(2):hover {
+      background-color: var(--strong-color) !important;
+      color: white !important;
+
+      .row {
+        color: white !important;
+      }
+
+      h2,
+      div {
+        color: white !important;
+      }
+    }
+
+    .mine_h {
+      height: 100vh;
+    }
+
+    .city_icon {
+      padding: 1.2em;
+      border-radius: 0;
+      width: 90%;
+    }
+
+    .brindisi {
+      padding: 0;
+      padding: 1em;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+  }
+
+  #follow_us {
+    background-color: var(--tertiary-color);
+    height: 12em;
+
+    img {
+      width: 200px;
+    }
+
+    .container {
+      padding-top: 1.5em !important;
+    }
+
+  }
+}
+
+/* #endregion management low-heigth devices */
+
 /* #region Mobile */
 @media (max-width: 480px) {
   /* Layout per smartphone */
@@ -248,6 +561,10 @@ body {
 
     .person-info {
       font-size: 1.4em;
+    }
+
+    .person-info h3 {
+      margin: 100px 0 10px !important;
     }
 
     .inactive-image {
