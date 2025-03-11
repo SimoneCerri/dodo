@@ -1697,7 +1697,7 @@ body {
 
     .btn_next {
       z-index: 999 !important;
-      bottom: 3% !important;
+      bottom: -3% !important;
     }
   }
 
