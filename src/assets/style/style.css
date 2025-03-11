@@ -253,16 +253,6 @@ body {
       gap: 0 !important;
     }
 
-    .btn_next {
-      position: absolute;
-      bottom: -3%;
-      height: 12vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--warning-color);
-    }
-
     .mine_mission_img {
       position: relative;
 
@@ -284,7 +274,7 @@ body {
     .btn_next {
       z-index: 10;
       position: absolute;
-      bottom: 2% !important;
+      bottom: -3% !important;
     }
   }
 
