@@ -33,7 +33,7 @@ export default {
 <template>
     <div class="d-flex justify-content-center align-items-center mine_rounded">
         <a href="#">
-            <img :src="logoSrc" alt="Logo">
+            <img :src="logoSrc" alt="Logo del sito raffigurante un collarino per cani con una cravattina">
         </a>
     </div>
 </template>

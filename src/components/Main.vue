@@ -91,13 +91,15 @@ export default {
                     </span>
                 </div>
                 <div class="col-8 d-flex justify-content-center w-100 mine_banner">
-                    <img src="/banner_brown.webp" alt="" class="">
+                    <img src="/banner_brown.webp"
+                        alt="Immagine di background della sezione call_to_action raffigurante una planimetria di una casa"
+                        class="">
                 </div>
             </div>
             <div class="col-12 mine_runner">
                 <!-- <img src="/dodo_corre.webp" alt=""> -->
-                <img src="/dodo_corre.webp" alt="" :class="{ 'mine-runner-animation': true, 'active': imageLoaded }"
-                    @load="setSlide" />
+                <img src="/dodo_corre.webp" alt="La mascotte del sito, Dodo, che sta correndo in soccorso del cliente"
+                    :class="{ 'mine-runner-animation': true, 'active': imageLoaded }" @load="setSlide" />
             </div>
         </div>
         <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -226,8 +228,12 @@ export default {
         </div>
         <div class="row text-center flex-column align-items-center justify-content-start h-100 mine_w pt-4">
             <div class="col-12 d-flex flex-column justify-content-start align-items-center mine_mission_img">
-                <img src="/carpet.webp" alt="" loading="lazy">
-                <img src="/dodo_in_piedi.webp" alt="Overlay" class="overlay-img" loading="lazy">
+                <img src="/carpet.webp"
+                    alt="Immagine in fondo alla sezione mission, raffigurante un carpet con alcuni fogli colorati sopra"
+                    loading="lazy">
+                <img src="/dodo_in_piedi.webp"
+                    alt="Ecco ancora tornare la mascotte Dodo, questa volta in piedi, sorridendo al cliente"
+                    class="overlay-img" loading="lazy">
             </div>
         </div>
         <a href="#contacts" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
@@ -246,8 +252,8 @@ export default {
                     @mouseover="isHoveredTorino = true" @mouseleave="isHoveredTorino = false">
                     <div class="row" style="color: var(--strong-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
-                            <img :src="isHoveredTorino ? iconHoverTorino : iconDefaultTorino" alt="" class="city_icon"
-                                loading="lazy">
+                            <img :src="isHoveredTorino ? iconHoverTorino : iconDefaultTorino"
+                                alt="Icona raffigurante la famosa Mole di Torino" class="city_icon" loading="lazy">
                         </div>
                         <div class="col-7 p-0">
                             <div class="row flex-column h-100 justify-content-center">
@@ -277,8 +283,9 @@ export default {
                     @mouseover="isHoveredBrindisi = true" @mouseleave="isHoveredBrindisi = false">
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
-                            <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi" alt=""
-                                class="city_icon brindisi" loading="lazy">
+                            <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi"
+                                alt="Icona raffigurante la famosa chiesa di Brindisi" class="city_icon brindisi"
+                                loading="lazy">
                         </div>
                         <div class="col-7 col_brindisi p-0">
                             <div class="row flex-column flex-column h-100 justify-content-center">
@@ -310,7 +317,9 @@ export default {
             <div class="container h-100 pt-5">
                 <div class="row justify-content-evenly align-items-center gap-5">
                     <div class="col-4 col-md-6 me-5">
-                        <img src="/door2door_marrone.webp" alt="" loading="lazy">
+                        <img src="/door2door_marrone.webp"
+                            alt="Logo del sito, con il collare di Dodo e la sua cravattina con in aggiunta la scritta DODO , door to door, esperto dell'abitare"
+                            loading="lazy">
                     </div>
                     <div class="col-4 col-md-6">
                         <div class="row flex-column">
@@ -320,7 +329,8 @@ export default {
                             <div class="col-4 col-lg-12 ms-2 qui">
                                 <div class="row flex-nowrap qui">
                                     <div class="col-12 col-lg-3 p-0">
-                                        <a href="https://www.facebook.com/share/18qC7VoJXt/" target="_blank"
+                                        <a href="https://www.facebook.com/share/18qC7VoJXt/"
+                                            aria-label="Link alla pagina Facebook di Dodo" target="_blank"
                                             rel="noopener noreferrer"
                                             class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
@@ -331,7 +341,8 @@ export default {
                                     </div>
                                     <div class="col-12 col-lg-3 p-0">
                                         <a href="https://www.instagram.com/dodoconsulente?igsh=MXB0MGpub3A0NHZnbg=="
-                                            target="_blank" rel="noopener noreferrer"
+                                            aria-label="Link alla pagina Instagram di Dodo" target="_blank"
+                                            rel="noopener noreferrer"
                                             class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
                                             <div class="social_icon">
                                                 <font-awesome-icon :icon="['fab', 'instagram']"

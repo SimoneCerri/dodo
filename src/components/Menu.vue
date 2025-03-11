@@ -22,26 +22,30 @@ export default {
         <div class="container-fluid d-flex justify-content-center">
             <button class="navbar-toggler collapsed px-4" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                aria-label="Toggle navigation" @click="toggleMenu">
+                aria-label="Apre o chiude il menu di navigazione" @click="toggleMenu">
                 <span></span>
             </button>
             <div :class="['collapse', 'navbar-collapse', { 'show': isMenuOpen }]" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
                     <li class="nav-item">
-                        <a @click="closeMenu" class="nav-link active" aria-current="page"
-                            href="#call_to_action">Home</a>
+                        <a @click="closeMenu" class="nav-link active" aria-label="Porta alla home del sito"
+                            aria-current="page" href="#call_to_action">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a @click="closeMenu" class="nav-link" href="#services">Servizi</a>
+                        <a @click="closeMenu" class="nav-link" aria-label="Porta alla sezione servizi del sito"
+                            href="#services">Servizi</a>
                     </li>
                     <li class="nav-item text-nowrap">
-                        <a @click="closeMenu" class="nav-link" href="#about_us">Chi siamo</a>
+                        <a @click="closeMenu" class="nav-link" aria-label="Porta alla sezione chi siamo del sito"
+                            href="#about_us">Chi siamo</a>
                     </li>
                     <li class="nav-item">
-                        <a @click="closeMenu" class="nav-link" href="#mission">Mission</a>
+                        <a @click="closeMenu" class="nav-link" aria-label="Porta alla sezione mission del sito"
+                            href="#mission">Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a @click="closeMenu" class="nav-link" href="#contacts">Contatti</a>
+                        <a @click="closeMenu" class="nav-link" aria-label="Porta alla sezione contatti del sito"
+                            href="#contacts">Contatti</a>
                     </li>
                 </ul>
             </div>

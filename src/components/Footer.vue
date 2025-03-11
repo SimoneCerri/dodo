@@ -27,12 +27,14 @@ export default {
                             Legal :
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none" href="" target="_blank" rel="noopener noreferrer">
+                            <a class="text-decoration-none" href="" aria-label="Link all'informativa sulla privacy"
+                                target="_blank" rel="noopener noreferrer">
                                 Privacy Policy
                             </a>
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none" href="" target="_blank" rel="noopener noreferrer">
+                            <a class="text-decoration-none" href="" aria-label="Link all'informativa sui cookies"
+                                target="_blank" rel="noopener noreferrer">
                                 Cookies
                             </a>
                         </li>
@@ -44,20 +46,21 @@ export default {
                             Team :
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none" href="https://www.instagram.com/wolly_makeup.art.magic/"
-                                target="_blank" rel="noopener noreferrer">
+                            <a class="text-decoration-none" aria-label="Link alla project manager del sito"
+                                href="https://www.instagram.com/wolly_makeup.art.magic/" target="_blank"
+                                rel="noopener noreferrer">
                                 PM - Wolly
                             </a>
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none" href="https://www.behance.net/peach_design" target="_blank"
-                                rel="noopener noreferrer">
+                            <a class="text-decoration-none" aria-label="Link alla designer del sito"
+                                href="https://www.behance.net/peach_design" target="_blank" rel="noopener noreferrer">
                                 Design - Peach
                             </a>
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none" href="https://github.com/SimoneCerri" target="_blank"
-                                rel="noopener noreferrer">
+                            <a class="text-decoration-none" aria-label="Link al developer/sviluppatore del sito"
+                                href="https://github.com/SimoneCerri" target="_blank" rel="noopener noreferrer">
                                 Dev - ScorpioN
                             </a>
                         </li>
@@ -69,13 +72,14 @@ export default {
                             Social :
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none" href="https://www.facebook.com/share/18qC7VoJXt/"
-                                target="_blank" rel="noopener noreferrer">
+                            <a class="text-decoration-none" aria-label="Link alla pagina Facebook di Dodo"
+                                href="https://www.facebook.com/share/18qC7VoJXt/" target="_blank"
+                                rel="noopener noreferrer">
                                 Facebook
                             </a>
                         </li>
                         <li class="list-group-item border-0">
-                            <a class="text-decoration-none"
+                            <a class="text-decoration-none" aria-label="Link alla pagina Instagram di Dodo"
                                 href="https://www.instagram.com/dodoconsulente?igsh=MXB0MGpub3A0NHZnbg=="
                                 target="_blank" rel="noopener noreferrer">
                                 Instagram
