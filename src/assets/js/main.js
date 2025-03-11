@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
 
+/* ### VUE META ### */
+import { createHead } from '@vueuse/head';
+
 /* ### CSS-LINK ### */
 import '../style/style.css'
 
@@ -16,6 +19,9 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 library.add(faUser, faHome, faAnglesDown, faChevronCircleDown, faChevronCircleUp, faFacebook, faInstagram, faChevronLeft, faChevronRight, faChevronUp);
 
+const head = createHead();
+
 createApp(App)
+    .use(head)
     .component('font-awesome-icon', FontAwesomeIcon)
     .mount('#app');
