@@ -102,7 +102,8 @@ export default {
                     :class="{ 'mine-runner-animation': true, 'active': imageLoaded }" @load="setSlide" />
             </div>
         </div>
-        <a href="#services" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#services" aria-label="Bottone per andare alla sezione successiva"
+            class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
@@ -152,7 +153,8 @@ export default {
                 </a>
             </div>
         </div>
-        <a href="#about_us" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#about_us" aria-label="Bottone per andare alla sezione successiva"
+            class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
@@ -163,7 +165,8 @@ export default {
             CHI SIAMO
         </h1>
         <div id="about-us-carousel" class="carousel">
-            <button @click="prevPerson" class="nav-arrow left-arrow"><font-awesome-icon icon="chevron-left" /></button>
+            <button @click="prevPerson" aria-label="Freccia verso sinistra per mostrare la persona precedente"
+                class="nav-arrow left-arrow"><font-awesome-icon icon="chevron-left" /></button>
 
             <div class="carousel-container">
                 <div v-for="(person, index) in people" :key="index"
@@ -183,10 +186,11 @@ export default {
                 </div>
             </div>
 
-            <button @click="nextPerson" class="nav-arrow right-arrow"><font-awesome-icon
-                    icon="chevron-right" /></button>
+            <button @click="nextPerson" aria-label="Freccia verso destra per mostrare la persona successiva"
+                class="nav-arrow right-arrow"><font-awesome-icon icon="chevron-right" /></button>
         </div>
-        <a href="#mission" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#mission" aria-label="Bottone per andare alla sezione successiva"
+            class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
@@ -236,7 +240,8 @@ export default {
                     class="overlay-img" loading="lazy">
             </div>
         </div>
-        <a href="#contacts" class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
+        <a href="#contacts" aria-label="Bottone per andare alla sezione successiva"
+            class="btn_next btn btn-white rounded-top-4 rounded-bottom-0 w-100">
             <div class="next_session_banner">
                 <font-awesome-icon icon="circle-chevron-down" />
             </div>
@@ -358,7 +363,8 @@ export default {
             </div>
         </section>
     </section>
-    <a href="#" class="btn_up btn" v-show="showBackToTop" @click="scrollToTop">
+    <a href="#" aria-label="Bottone per tornare in alto nella pagina, alla prima sezione" class="btn_up btn"
+        v-show="showBackToTop" @click="scrollToTop">
         <div class="back_to_top">
             <font-awesome-icon icon="circle-chevron-up" />
         </div>
