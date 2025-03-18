@@ -2,7 +2,7 @@
 
 Progetto per la realizzazione della landing page di **"DODO"** : *servizio door to door di consulenza personalizzata in ambito immobiliare e della progettazione domestica, tramite innovazione ed empatia.*
 
-[ Visita la pagina web -> ]() 
+[ Visita la pagina web -> ](https://animated-toffee-20b9db.netlify.app/#about_us) 
 
 ## ⭐ **<span style="color: #F5BF40"> VISION & MISSION </span>** ##
 
