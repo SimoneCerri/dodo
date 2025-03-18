@@ -43,6 +43,8 @@ Progetto per la realizzazione della landing page di **"DODO"** : *servizio door 
 - [GoogleFont](https://fonts.google.com/) .
 - [Bootstrap](https://getbootstrap.com/) .
 - [FontAwesome](https://fontawesome.com/) .
+- [Netlify](https://app.netlify.com/sites/animated-toffee-20b9db/overview) .
+
 
 ### 🔗 **<span style="color: black"> TEAM </span>** ###
 
