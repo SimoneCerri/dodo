@@ -696,12 +696,12 @@ export default {
     }
 
     .left-arrow {
-        left: 23%;
+        left: 26%;
         z-index: 1100;
     }
 
     .right-arrow {
-        right: 24%;
+        right: 28%;
         z-index: 1100;
     }
 }
