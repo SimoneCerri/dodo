@@ -15,9 +15,15 @@ export default {
             showBackToTop: false,
             currentPerson: 0,
             people: [
-                { name: 'NICOLETTA', description: "This is a <strong>bold</strong> text with a line break.<br>And here is more text.", image: 'smile.webp' },
-                { name: 'BOB', description: 'Responsabile Brindisi', image: 'smile2.webp' },
-                { name: 'DODO', description: 'Ciao a tutti! Sono <strong>Dodo</strong>, un cane vivace e giocoso. <br><br> Mi piace molto <strong>aiutare le persone a trovare la casa dei loro sogni.</strong> Sono un esperto nel trovare le case <strong>perfette per ogni tipo di famiglia,</strong> dal single al nucleo famigliare più numeroso. <br><br> Sono anche un grande appassionato di <strong>ristrutturazioni.</strong> Mi piace aiutare le persone a trasformare le loro case in luoghi <strong>accoglienti e confortevoli.</strong>', image: 'about_us_dodo.webp' },
+                {
+                    name: 'NICOLETTA', description: "Ciao,mii chiamo Nicoletta e dal 2004 opero come professionista nella vendita diretta, offrendo ai miei clienti un servizio personalizzato a domicilio.Nel 2022 ho fondato Conte di Varano 3.Zero srl, un progetto dedicato al mondo dell’arredamento, delle piccole ristrutturazioni, dei complementi d’arredo e dei sistemi di riposo.La mia missione è aiutarti a trasformare i tuoi spazi in ambienti confortevoli,funzionali e su misura per le tue esigenze.Offro soluzioni personalizzate, progettate su misura per garantire il massimo comfort ai miei clienti.", image: 'nicoletta.webp'
+                },
+                {
+                    name: 'MARIO', description: 'Ciao io sono Mario, dal 1979 opero nella vendita diretta , servendo oggi la terza generazione dei miei clienti.Dopo aver gestito due mobilifici, ho deciso di affiancarmi in questo progetto, mettendo la mia esperienza al servizio della nostra realtà. Oltre ad essere un arredatore, sono un’artista e realizzo opere anche su commissione che diventano complementi d’arredo unici ed inimitabili.', image: 'mario_b&w.webp'
+                },
+                {
+                    name: 'DODO', description: 'Ciao io sono Dodo, la mascotte ed il vostro consulente personale, nato per accompagnarti in una scelta libera e consapevole, in quanto ti fornirò tutti gli elementi necessari a fare la scelta più indicata per le tue esigenze e per quelle di tutta la famiglia.Grazie a solide collaborazioni e partnership costruite negli anni, non ci limitiamo a offrire solo ciò che trovi nella nostra azienda, ma possiamo proporti anche le migliori soluzioni dei nostri partner commerciali.', image: 'about_us_dodo.webp'
+                },
             ],
             isHoveredBrindisi: false,
             isHoveredTorino: false,
@@ -270,13 +276,13 @@ export default {
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
                                         <div class="col-4 col-md-12">
-                                            Via della mole 15
+                                            Strada del Balzetto 1
                                         </div>
                                         <div class="col-4 col-md-12">
-                                            33323131241
+                                            (+39) 3891059799
                                         </div>
                                         <div class="col-4 col-md-12">
-                                            dodo.torino@gmail.com
+                                            info@contedivarano3z.it
                                         </div>
                                     </div>
                                 </div>
@@ -302,13 +308,13 @@ export default {
                                 <div class="col-6">
                                     <div class="row flex-column gap-1 text-nowrap">
                                         <div class="col-4 col-md-12">
-                                            Via del brindisi 22
+                                            Via del lavoro 21
                                         </div>
                                         <div class="col-4 col-md-12">
-                                            33323131241
+                                            (+39) 3804993244
                                         </div>
                                         <div class="col-4 col-md-12">
-                                            dodo.brindisi@gmail.com
+                                            info@contedivarano3z.it
                                         </div>
                                     </div>
                                 </div>
