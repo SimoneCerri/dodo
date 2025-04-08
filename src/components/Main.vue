@@ -295,8 +295,8 @@ export default {
                     <div class="row" style="color: var(--light-color);">
                         <div class="col-5 d-flex justify-content-center align-items-center">
                             <img :src="isHoveredBrindisi ? iconHoverBrindisi : iconDefaultBrindisi"
-                                alt="Icona raffigurante la famosa chiesa di Brindisi" class="city_icon brindisi"
-                                loading="lazy">
+                                alt="Icona raffigurante il famoso monumento al marinaio di Brindisi"
+                                class="city_icon brindisi" loading="lazy">
                         </div>
                         <div class="col-7 col_brindisi p-0">
                             <div class="row flex-column flex-column h-100 justify-content-center">
