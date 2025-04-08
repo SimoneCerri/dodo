@@ -189,7 +189,6 @@ body {
       border-radius: 50%;
       background-size: cover;
       background-position: center;
-      filter: blur(3px) grayscale(50%);
       transition: all 0.5s ease;
       z-index: 900;
     }
@@ -652,7 +651,7 @@ body {
     }
 
     .brindisi {
-      width: 90% !important;
+      width: 60% !important;
     }
 
     h2 {
@@ -996,7 +995,7 @@ body {
     }
 
     .brindisi {
-      width: 90% !important;
+      width: 60% !important;
     }
 
     h2 {
@@ -1354,7 +1353,7 @@ body {
     }
 
     .brindisi {
-      width: 90% !important;
+      width: 60% !important;
     }
 
     h2 {
@@ -1782,7 +1781,7 @@ body {
     }
 
     .brindisi {
-      width: 90% !important;
+      width: 60% !important;
     }
 
     h2 {
@@ -2222,7 +2221,7 @@ body {
     }
 
     .brindisi {
-      width: 100% !important;
+      width: 70% !important;
     }
 
     h2 {
@@ -2670,7 +2669,7 @@ body {
     }
 
     .brindisi {
-      width: 100% !important;
+      width: 70% !important;
     }
 
     .col_brindisi {

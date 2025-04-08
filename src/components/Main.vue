@@ -660,7 +660,7 @@ export default {
         border-radius: 50%;
         background-size: cover;
         background-position: center;
-        filter: blur(3px) grayscale(50%);
+        /* filter: blur(3px) grayscale(50%); */
         transition: all 0.5s ease;
         z-index: 900;
     }
@@ -687,7 +687,7 @@ export default {
         border: none;
         font-size: 1.7em;
         cursor: pointer;
-        color: var(--tertiary-color) !important;
+        color: var(--strong-color) !important;
     }
 
     .left-arrow,
