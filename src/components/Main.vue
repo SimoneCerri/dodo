@@ -97,9 +97,21 @@ export default {
                     </span>
                 </div>
                 <div class="col-8 d-flex justify-content-center w-100 mine_banner">
-                    <img src="/banner_brown.webp"
+                    <img srcset="
+                    /banner_brown_max.webp 3840w,
+                    /banner_brown_desktop.webp 1920w,
+                    /banner_brown_tablet.webp 1280w,
+                    /banner_brown_mobile.webp 960w,
+                    /banner_brown_mini.webp 640w
+                    " sizes="(max-width: 640px) 100vw,
+                    (max-width: 960px) 100vw,
+                    (max-width: 1280px) 100vw,
+                    (max-width: 1920px) 100vw,
+                    1920px" loading="eager"
                         alt="Immagine di background della sezione call_to_action raffigurante una planimetria di una casa"
-                        class="">
+                        width="1920" height="1280" class="img-fluid"
+                        style="width: 100%; height: auto; max-width: 100%; aspect-ratio: 1920/1280; object-fit: cover;"
+                        fetchpriority="high" decoding="async">
                 </div>
             </div>
             <div class="col-12 mine_runner">

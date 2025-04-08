@@ -10,13 +10,17 @@
   <title>DODO</title>
   <!-- ### FONT ### -->
   <!-- Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="preload" href="/banner_brown.webp" as="image">
+  <link rel="preload" as="image" href="/banner-mobile.webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="/banner-desktop.webp" media="(min-width: 769px)">
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+  </div>
   <!-- ### JAVASCRIPT-LINK ### -->
   <script type="module" src="/src/assets/js/main.js"></script>
 </body>
